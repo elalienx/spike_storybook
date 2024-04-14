@@ -1,0 +1,27 @@
+/* 
+ * About:
+ * Takes care of the design, the hide/unhide is handled by table-candidate.css
+ */
+.header-candidate {
+  /* to fix the negative margin of the company picture */
+  margin-bottom: var(--space-small);
+  text-align: center;
+}
+
+.header-candidate .candidate {
+  --size: 72px;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--border-radius-big);
+}
+
+.header-candidate .company {
+  --size: 32px;
+
+  width: var(--size);
+  height: var(--size);
+  margin-left: -24px;
+  margin-bottom: -8px;
+  border-radius: var(--border-radius-small);
+}

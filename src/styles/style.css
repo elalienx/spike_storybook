@@ -1,0 +1,26 @@
+/* Base */
+@import url("./base//variables.css");
+@import url("./base/typography.css");
+@import url("./base/layout.css");
+
+/* Components */
+@import url("./components/button-primary.css");
+@import url("./components/button.css");
+@import url("./components/card-new.css");
+@import url("./components/card.css");
+@import url("./components/header-candidate.css");
+@import url("./components/input-image.css");
+@import url("./components/input.css");
+@import url("./components/item-badge.css");
+@import url("./components/item-profile.css");
+@import url("./components/navigation-bar.css");
+@import url("./components/table-candidate.css");
+@import url("./components/table.css");
+
+/* Sections */
+@import url("./sections/badges.css");
+@import url("./sections/buttons.css");
+@import url("./sections/cards.css");
+@import url("./sections/hero.css");
+@import url("./sections/inputs.css");
+@import url("./sections/text-styles.css");

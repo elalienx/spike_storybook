@@ -1,0 +1,20 @@
+.button.button-primary {
+  background-color: var(--color-blue);
+  color: white;
+  border-color: var(--color-blue);
+}
+
+.button.button-primary:hover {
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
+.button.button-primary:active {
+  color: var(--color-blue-light);
+}
+
+.button.button-primary:disabled {
+  background-color: var(--color-black-light);
+  color: var(--color-gray);
+  border-color: var(--color-black-light);
+}

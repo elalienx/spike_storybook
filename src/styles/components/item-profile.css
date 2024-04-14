@@ -1,0 +1,13 @@
+.item-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+}
+
+.item-profile img {
+  --size: 32px;
+
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-gray-light);
+}

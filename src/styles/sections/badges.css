@@ -1,0 +1,20 @@
+#badges .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-medium);
+  margin-bottom: var(--space-big);
+}
+
+/* Bigger than phablet */
+@media (min-width: 550px) {
+  #badges .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop full */
+@media (min-width: 1200px) {
+  #badges .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

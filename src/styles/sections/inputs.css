@@ -1,0 +1,14 @@
+#inputs form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+  justify-content: start;
+  align-items: start;
+}
+
+/* Bigger than phablet */
+@media (min-width: 550px) {
+  #inputs form {
+    width: 240px;
+  }
+}

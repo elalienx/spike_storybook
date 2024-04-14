@@ -4,8 +4,8 @@ import { useState } from "react";
 // Project files
 import logoReact from "./assets/react.svg";
 import logoVite from "/vite.svg";
-import "./App.css";
 import Badge from "./components/badge/Badge";
+import "./styles/style.css";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -20,7 +20,7 @@ export default function App() {
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
-      <Badge color="red" value="5" />
+      <Badge color="red" value={5} />
     </div>
   );
 }

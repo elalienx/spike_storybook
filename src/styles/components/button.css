@@ -1,0 +1,37 @@
+.button {
+  min-width: 200px;
+  padding: 12px 36px;
+  background-color: white;
+  color: var(--color-black);
+  border: solid 1.5px currentColor;
+  border-radius: 100px;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+}
+
+.button .icon {
+  margin-right: var(--space-small);
+}
+
+.button.small {
+  min-width: 100px;
+  padding: 6px 18px;
+  font-size: var(--font-size-small);
+}
+
+.button:hover {
+  background-color: var(--color-black);
+  color: white;
+  border-color: var(--color-black);
+}
+
+.button:active {
+  color: var(--color-gray);
+}
+
+.button:disabled {
+  background-color: white;
+  color: var(--color-gray);
+  border-color: currentColor;
+  cursor: not-allowed;
+}

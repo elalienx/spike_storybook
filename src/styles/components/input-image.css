@@ -1,0 +1,33 @@
+.input-image {
+  --size: 48px; /* the size of the image preview and the input file */
+}
+
+.input-image .content {
+  position: relative; /* so we can use position: absolute on the true input file */
+}
+
+.input-image img {
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--border-radius-big);
+  object-fit: cover;
+}
+
+.input-image input[type="file"] {
+  position: absolute; /* to position it on top of the image preview so it throws warnings if the user dont choose an image */
+  top: 0;
+  width: var(--size);
+  height: var(--size);
+  background-color: transparent; /* to make it transparent, because we only care about the popup warning that happens if you dont choose a file */
+  color: transparent;
+}
+
+.input-image input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.input-image .file-name {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+}

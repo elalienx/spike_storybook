@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--color-black);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: auto; /* To make text look great on Apple devices */
+}
+
+image {
+  display: inline-block; /* to remove the weird space bottom that inline elements have */
+  width: 100%;
+  height: auto;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-big);
+}

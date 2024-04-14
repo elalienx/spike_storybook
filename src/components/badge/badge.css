@@ -1,12 +1,59 @@
+@import "../../styles/base/variables.css";
+@import "../../styles/base/typography.css";
+
 .badge {
-  background-color: black;
-  color: white;
+  /* Yes unique, non standard values, this is a special item! */
+  --size: 15px;
+  --font-size: 10px;
+
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-black-light);
+  color: var(--color-black);
+  border-radius: 100%;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--size);
 }
 
-.badge .green {
-  background-color: green;
+.badge.gray {
+  background-color: var(--color-gray-light);
+  color: var(--color-gray);
 }
 
-.bage .red {
-  background-color: red;
+.badge.red {
+  background-color: var(--color-red-light);
+  color: var(--color-red);
+}
+
+.badge.orange {
+  background-color: var(--color-orange-light);
+  color: var(--color-orange);
+}
+
+.badge.yellow {
+  background-color: var(--color-yellow-light);
+  color: var(--color-yellow);
+}
+
+.badge.green {
+  background-color: var(--color-green-light);
+  color: var(--color-green);
+}
+
+.badge.blue {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue);
+}
+
+.badge.cyan {
+  background-color: var(--color-cyan-light);
+  color: var(--color-cyan);
+}
+
+.badge.purple {
+  background-color: var(--color-purple-light);
+  color: var(--color-purple);
 }

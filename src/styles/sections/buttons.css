@@ -1,0 +1,15 @@
+#buttons .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* to sent items to the next line if not space is available */
+  align-items: start; /* you need to add aligment to flex items otherwise the strech to fill the parent container */
+  gap: var(--space-small);
+}
+
+/* Bigger than phablet */
+@media (min-width: 550px) {
+  #buttons .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}

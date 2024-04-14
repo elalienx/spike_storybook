@@ -9,26 +9,64 @@ const meta = {
   component: Badge,
   parameters: { layout: "centered" },
   tags: ["autodocs"],
-  argTypes: {
-    color: { control: "color" },
-  },
-  args: {},
 } satisfies Meta<typeof Badge>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Stories (variants)
+export const Default: Story = {
+  args: {
+    color: "gray",
+    value: 0,
+  },
+};
+
 export const Red: Story = {
   args: {
     color: "red",
-    value: "1",
+    value: 1,
+  },
+};
+
+export const Orange: Story = {
+  args: {
+    color: "orange",
+    value: 2,
+  },
+};
+
+export const Yellow: Story = {
+  args: {
+    color: "yellow",
+    value: 3,
   },
 };
 
 export const Green: Story = {
   args: {
     color: "green",
-    value: "2",
+    value: 4,
+  },
+};
+
+export const Cyan: Story = {
+  args: {
+    color: "cyan",
+    value: 5,
+  },
+};
+
+export const Blue: Story = {
+  args: {
+    color: "blue",
+    value: 6,
+  },
+};
+
+export const Purple: Story = {
+  args: {
+    color: "purple",
+    value: 7,
   },
 };
