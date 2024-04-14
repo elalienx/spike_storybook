@@ -6,7 +6,7 @@ export default create({
 
   // Typography
   fontBase: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontCode: "monospace",
+  fontCode: '"Menlo", "Monaco", monospace',
 
   // Brand
   brandImage: "./logo-scoutr-for-storybook.svg",
@@ -21,7 +21,7 @@ export default create({
   textColor: "#212529", // Scoutr Ink black
 
   // Form colors
-  inputBg: "#A9A9A9", // Scoutr Silver gray
-  inputBorder: "#A9A9A9", // Scoutr Silver gray
+  inputBg: "#E6E9EB", // Scoutr Ink black light
+  inputBorder: "#E6E9EB", // Scoutr Ink black light
   inputTextColor: "#212529", // Scoutr Ink black
 });

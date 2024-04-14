@@ -8,6 +8,4 @@
 import { addons } from "@storybook/manager-api";
 import ScoutrTheme from "./ScoutrTheme";
 
-addons.setConfig({
-  theme: ScoutrTheme,
-});
+addons.setConfig({ theme: ScoutrTheme });
