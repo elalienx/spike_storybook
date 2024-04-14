@@ -31,7 +31,7 @@ export default function Button({
 
   return (
     <button className={`button ${size} ${classNamePrimary}`} {...props}>
-      ({icon}) - {label}
+      {icon} {label}
     </button>
   );
 }
