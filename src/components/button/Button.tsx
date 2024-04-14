@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName } from "@fortawesome/free-solid-svg-icons";
 
 // Project  files
-import "../../scripts/FontAwesome";
+import "../../scripts/fontAwesome";
 import "./button.css";
 import "./button-primary.css";
 
