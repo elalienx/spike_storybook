@@ -1,6 +1,3 @@
-@import "../../styles/base/variables.css";
-@import "../../styles/base/typography.css";
-
 .button.primary {
   background-color: var(--color-blue);
   color: white;

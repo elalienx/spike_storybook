@@ -1,6 +1,3 @@
-@import "../../styles/base/variables.css";
-@import "../../styles/base/typography.css";
-
 .badge {
   /* Yes unique, non standard values, this is a special item! */
   --size: 15px;
