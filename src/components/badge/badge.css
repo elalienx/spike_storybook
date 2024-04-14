@@ -1,0 +1,12 @@
+.badge {
+  background-color: black;
+  color: white;
+}
+
+.badge .green {
+  background-color: green;
+}
+
+.bage .red {
+  background-color: red;
+}
