@@ -4,8 +4,6 @@
 @import url("./base/layout.css");
 
 /* Components */
-@import url("./components/button-primary.css");
-@import url("./components/button.css");
 @import url("./components/card-new.css");
 @import url("./components/card.css");
 @import url("./components/header-candidate.css");
