@@ -1,3 +1,7 @@
+// Node modules
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconName } from "@fortawesome/free-solid-svg-icons";
+
 // Project  files
 import "./button.css";
 import "./button-primary.css";
@@ -9,8 +13,8 @@ interface Props {
   /** Is this the principal call to action on the page? */
   primary: boolean;
 
-  /** Button decorative icon */
-  icon?: string;
+  /** The icon name from the FontAwesome library */
+  icon?: IconName;
 
   /** How large should the button be? */
   size?: "small" | "big";
@@ -31,7 +35,7 @@ export default function Button({
 
   return (
     <button className={`button ${size} ${classNamePrimary}`} {...props}>
-      {icon} {label}
+      @<FontAwesomeIcon className="icon" icon={["fas", "plus"]} />@{label}2
     </button>
   );
 }
