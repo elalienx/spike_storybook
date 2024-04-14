@@ -17,6 +17,7 @@ type Story = StoryObj<typeof meta>;
 // Stories (variants)
 export const Primary: Story = {
   args: {
+    icon: "plus",
     primary: true,
     label: "Button",
   },
@@ -24,6 +25,7 @@ export const Primary: Story = {
 
 export const PrimaryBig: Story = {
   args: {
+    icon: "plus",
     primary: true,
     label: "Button",
     size: "big",
@@ -32,6 +34,7 @@ export const PrimaryBig: Story = {
 
 export const Secondary: Story = {
   args: {
+    icon: "folder-open",
     primary: false,
     label: "Button",
   },
@@ -39,6 +42,7 @@ export const Secondary: Story = {
 
 export const SecondaryBig: Story = {
   args: {
+    icon: "circle-check",
     primary: false,
     label: "Button",
     size: "big",

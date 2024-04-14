@@ -35,7 +35,7 @@ export default function Button({
 
   return (
     <button className={`button ${size} ${classNamePrimary}`} {...props}>
-      <FontAwesomeIcon className="icon" icon={["fas", "plus"]} />
+      <FontAwesomeIcon className="icon" icon={["fas", icon]} />
       {label}
     </button>
   );

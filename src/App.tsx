@@ -19,6 +19,7 @@ export default function App() {
       </div>
       <h1>Vite + React</h1>
       <Button
+        icon="folder-open"
         label={`Count is ${count}`}
         primary={false}
         onClick={() => setCount((count) => count + 1)}
