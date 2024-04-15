@@ -1,8 +1,6 @@
-// Node modules
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // Project files
 import Placeholder from "../../assets/placeholder-company.png";
+import Button from "../button/Button";
 import "./card-new.css";
 
 /** UI component to create a new assignment */
@@ -12,10 +10,7 @@ export default function CardNew() {
       <img src={Placeholder} alt="A generic building" />
       <h2>Role name</h2>
       <small className="label">Company name</small>
-      <button className="button primary small">
-        <FontAwesomeIcon className="icon" icon={["fas", "plus"]} />
-        New assignment
-      </button>
+      <Button label={"New assignment"} primary={true} icon="plus" />
     </article>
   );
 }

@@ -1,8 +1,6 @@
-// Node modules
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // Project files
 import Assignment from "../../types/Assignment";
+import Button from "../button/Button";
 import "./card.css";
 
 /** UI component to visualize an assignment */
@@ -14,10 +12,7 @@ export default function Card(item: Assignment) {
       <img src={company_image_url} alt="The company logo" />
       <h2>{assignment_name}</h2>
       <small className="label">{company_name}</small>
-      <button className="button small">
-        <FontAwesomeIcon className="icon" icon={["fas", "folder-open"]} />
-        Open
-      </button>
+      <Button label={"Open"} primary={false} icon="folder-open" />
     </article>
   );
 }
