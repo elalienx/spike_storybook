@@ -1,3 +1,6 @@
+// Node modules
+import { useState } from "react";
+
 // Project files
 import "./input.css";
 
@@ -12,7 +15,7 @@ interface Props {
   required: boolean;
 
   /** The text the user writes in the field */
-  value?: string;
+  initialValue?: string;
 }
 
 /** Input control to allow multiple lines of text */
@@ -20,14 +23,21 @@ export default function InputText({
   label,
   placeholder,
   required,
-  value,
+  initialValue,
 }: Props) {
+  // Local state
+  const [value, setValue] = useState(initialValue);
+
   return (
     <label className="input">
       <span className="label">{label}</span>
-      <textarea rows={10} placeholder={placeholder} required={required}>
-        {value}
-      </textarea>
+      <textarea
+        rows={10}
+        placeholder={placeholder}
+        required={required}
+        onChange={(event) => setValue(event.target.value)}
+        value={value}
+      ></textarea>
     </label>
   );
 }

@@ -34,7 +34,7 @@ export const PrimaryBig: Story = {
 
 export const Secondary: Story = {
   args: {
-    icon: "folder-open",
+    icon: "plus",
     primary: false,
     label: "Button",
   },
@@ -42,7 +42,7 @@ export const Secondary: Story = {
 
 export const SecondaryBig: Story = {
   args: {
-    icon: "circle-check",
+    icon: "plus",
     primary: false,
     label: "Button",
     size: "big",
