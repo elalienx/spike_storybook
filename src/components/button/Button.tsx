@@ -25,7 +25,7 @@ interface Props {
 
 /** Primary UI component for user interaction */
 export default function Button({
-  label = "Button label",
+  label,
   primary,
   icon = "plus",
   size = "small",

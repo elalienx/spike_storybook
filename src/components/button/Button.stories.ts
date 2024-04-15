@@ -19,7 +19,7 @@ export const Primary: Story = {
   args: {
     icon: "plus",
     primary: true,
-    label: "Button",
+    label: "Click me",
   },
 };
 
@@ -27,7 +27,7 @@ export const PrimaryBig: Story = {
   args: {
     icon: "plus",
     primary: true,
-    label: "Button",
+    label: "Click me",
     size: "big",
   },
 };
@@ -36,7 +36,7 @@ export const Secondary: Story = {
   args: {
     icon: "plus",
     primary: false,
-    label: "Button",
+    label: "Click me",
   },
 };
 
@@ -44,7 +44,7 @@ export const SecondaryBig: Story = {
   args: {
     icon: "plus",
     primary: false,
-    label: "Button",
+    label: "Click me",
     size: "big",
   },
 };

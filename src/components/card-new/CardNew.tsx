@@ -1,6 +1,7 @@
 // Project files
 import Placeholder from "../../assets/placeholder-company.png";
 import Button from "../button/Button";
+import "./card.css";
 import "./card-new.css";
 
 /** UI component to create a new assignment */

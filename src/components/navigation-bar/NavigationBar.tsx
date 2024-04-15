@@ -4,15 +4,21 @@ import Placeholder from "../../assets/placeholder-company.png";
 import "./navigation-bar.css";
 
 interface Props {
+  /** The name of the current assignment */
   assignment_name: string;
+
+  /** The company logo */
   company_image_url: string;
+
+  /** How many candidates have responded to us after initial contact? No value indicates no contact yet. */
   response_rate?: number;
 }
 
+/** The menu bar for the Candidate page */
 export default function NavigationBar({
   assignment_name,
   company_image_url,
-  response_rate = -1,
+  response_rate = undefined,
 }: Props) {
   // Properties
   const Image = company_image_url === "" ? Placeholder : company_image_url;
@@ -39,7 +45,7 @@ export default function NavigationBar({
       <img className="middle logo" src={Logo} />
 
       {/* Right */}
-      {response_rate >= 0 ? ResponseRate : KeepRightMargin}
+      {response_rate === undefined ? KeepRightMargin : ResponseRate}
     </nav>
   );
 }
