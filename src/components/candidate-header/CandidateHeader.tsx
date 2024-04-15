@@ -4,6 +4,9 @@ import PlaceholderCompany from "../../assets/placeholder-company.png";
 import "./candidate-header.css";
 
 interface iProps {
+  /** The unique indentifier of the candidate */
+  id: number;
+
   /** The name of the candidate */
   candidate: string;
 
@@ -12,7 +15,7 @@ interface iProps {
 }
 
 /** A mobile component for table rows, styled to resemble a social media platform */
-export default function CandidateHeader({ candidate, company }: iProps) {
+export default function CandidateHeader({ id, candidate, company }: iProps) {
   const sourceCandidate = candidate === "" ? PlaceholderCandidate : candidate;
   const sourceCompany = company === "" ? PlaceholderCompany : company;
 
@@ -28,6 +31,7 @@ export default function CandidateHeader({ candidate, company }: iProps) {
         src={sourceCompany}
         alt="Candidate current company logo"
       />
+      <small className="label">Profile #{id}</small>
     </header>
   );
 }

@@ -21,3 +21,7 @@
   margin-bottom: -8px;
   border-radius: var(--border-radius-small);
 }
+
+.candidate-header .label {
+  margin-top: var(--space-medium);
+}
