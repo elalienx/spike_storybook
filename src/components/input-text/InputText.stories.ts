@@ -15,11 +15,20 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Stories (variants)
-export const Default: Story = {
+export const Empty: Story = {
   args: {
     label: "Name",
     placeholder: "Eduardo Alvarez",
     required: true,
-    value: "",
+    initialValue: "",
+  },
+};
+
+export const WithText: Story = {
+  args: {
+    label: "Name",
+    placeholder: "Eduardo Alvarez",
+    required: true,
+    initialValue: "Cecilia Nowak",
   },
 };

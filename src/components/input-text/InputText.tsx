@@ -1,4 +1,5 @@
 // Project files
+import { useState } from "react";
 import "./input.css";
 
 interface Props {
@@ -12,7 +13,7 @@ interface Props {
   required: boolean;
 
   /** The text the user writes in the field */
-  value?: string;
+  initialValue?: string;
 }
 
 /** Input control to allow a single line of text */
@@ -20,8 +21,10 @@ export default function InputText({
   label,
   placeholder,
   required,
-  value,
+  initialValue,
 }: Props) {
+  const [value, setValue] = useState(initialValue);
+
   return (
     <label className="input">
       <span className="label">{label}</span>
@@ -30,6 +33,7 @@ export default function InputText({
         placeholder={placeholder}
         required={required}
         value={value}
+        onChange={(event) => setValue(event.target.value)}
       />
     </label>
   );
