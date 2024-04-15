@@ -8,12 +8,11 @@ import "./card.css";
 export default function Card(item: Assignment) {
   const { assignment_name, company_name, company_image_url } = item;
 
-  const sourceImage =
-    company_image_url === "" ? Placeholder : company_image_url;
+  const Image = company_image_url === "" ? Placeholder : company_image_url;
 
   return (
     <article className="card">
-      <img src={sourceImage} alt="The company logo" />
+      <img src={Image} alt="The company logo" />
       <h2>{assignment_name}</h2>
       <small className="label">{company_name}</small>
       <Button label={"Open"} primary={false} icon="folder-open" />

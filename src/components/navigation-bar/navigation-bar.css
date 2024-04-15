@@ -2,23 +2,24 @@
   display: flex;
   align-items: center;
   padding: var(--space-small) 24px;
+  background-color: white;
 
   /* debug color until stick it to the top */
   /* background-color: var(--color-gray-light); */
 }
 
 /* Layout */
-.navigation-bar .assignment,
-.navigation-bar .response-rate {
+.navigation-bar .left,
+.navigation-bar .right {
   flex: 1; /* Trick to force logo be in the center */
 }
 
-.navigation-bar .assignment {
+.navigation-bar .left {
   display: flex;
   align-items: center;
 }
 
-.navigation-bar .response-rate {
+.navigation-bar .right {
   text-align: right;
 }
 

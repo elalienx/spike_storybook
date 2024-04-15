@@ -4,7 +4,7 @@ import { IconName } from "@fortawesome/free-solid-svg-icons";
 
 // Project  files
 import "./button.css";
-import "./button-primary.css";
+import "./button-variants.css";
 
 interface Props {
   /** Button contents */

@@ -13,12 +13,6 @@
   margin-right: var(--space-small);
 }
 
-.button.small {
-  min-width: 100px;
-  padding: 6px 18px;
-  font-size: var(--font-size-small);
-}
-
 .button:hover {
   background-color: var(--color-black);
   color: white;
