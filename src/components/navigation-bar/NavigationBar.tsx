@@ -10,7 +10,7 @@ interface Props {
   /** The company logo */
   company_image_url: string;
 
-  /** How many candidates have responded to us after initial contact? No value indicates no contact yet. */
+  /** How many candidates have responded to us after initial contact? No value indicates we haven't started to contact anyone yet */
   response_rate?: number;
 }
 
