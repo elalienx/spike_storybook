@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Assignment from "../../types/Assignment";
 import "./card.css";
 
-/** The component to visualize an assignment */
+/** UI component to visualize an assignment */
 export default function Card(item: Assignment) {
   const { assignment_name, company_name, company_image_url } = item;
 

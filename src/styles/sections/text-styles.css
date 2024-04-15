@@ -1,6 +1,0 @@
-/* Bigger than phablet */
-@media (min-width: 550px) {
-  #text-styles .container {
-    max-width: 67ch;
-  }
-}
