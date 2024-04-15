@@ -1,6 +1,6 @@
 .candidate-header {
   /* to fix the negative margin of the company picture */
-  margin-bottom: var(--space-small);
+  /* margin-bottom: var(--space-small); */
   text-align: center;
 }
 
@@ -17,11 +17,11 @@
 
   width: var(--size);
   height: var(--size);
-  margin-left: -24px;
-  margin-bottom: -8px;
+  margin-left: -16px; /* to move this image inside the other */
   border-radius: var(--border-radius-small);
 }
 
 .candidate-header .label {
-  margin-top: var(--space-medium);
+  margin-top: var(--space-small);
+  margin-left: -16px; /* to visually center the label with the bigger image */
 }
