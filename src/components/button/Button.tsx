@@ -23,7 +23,7 @@ interface Props {
   onClick?: () => void;
 }
 
-/** Primary UI component for user interaction */
+/** Primary UI component for user interaction. */
 export default function Button({
   label,
   primary,

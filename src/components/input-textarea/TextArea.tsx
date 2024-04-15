@@ -18,7 +18,7 @@ interface Props {
   initialValue?: string;
 }
 
-/** Input control to allow multiple lines of text */
+/** Input control to allow multiple lines of text. */
 export default function InputText({
   label,
   placeholder,

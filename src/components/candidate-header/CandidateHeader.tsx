@@ -14,7 +14,7 @@ interface iProps {
   company: string;
 }
 
-/** A mobile component for table rows, styled to resemble a social media platform */
+/** A mobile component for table rows, styled to resemble a social media platform. */
 export default function CandidateHeader({ id, candidate, company }: iProps) {
   const sourceCandidate = candidate === "" ? PlaceholderCandidate : candidate;
   const sourceCompany = company === "" ? PlaceholderCompany : company;

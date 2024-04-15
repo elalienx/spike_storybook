@@ -14,7 +14,7 @@ interface Props {
   response_rate?: number;
 }
 
-/** The menu bar for the Candidate page */
+/** The menu bar for the Candidate page. */
 export default function NavigationBar({
   assignment_name,
   company_image_url,

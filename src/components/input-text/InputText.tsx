@@ -16,7 +16,7 @@ interface Props {
   initialValue?: string;
 }
 
-/** Input control to allow a single line of text */
+/** Input control to allow a single line of text. */
 export default function InputText({
   label,
   placeholder,
