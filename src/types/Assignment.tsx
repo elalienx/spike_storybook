@@ -1,7 +1,16 @@
 export default interface Assignment {
+  /** The assignment's unique identifier */
   id: number;
-  date_created: string; // on the real project this is date
+
+  /** A date assigned automatically by the database */
+  date_created: string;
+
+  /** The title of the person to be hired */
   assignment_name: string;
+
+  /** The company that hired us to fill this job vacancy */
   company_name: string;
+
+  /** The logo of the company */
   company_image_url: string;
 }

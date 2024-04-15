@@ -8,7 +8,10 @@ const meta = {
   title: "Components/Card",
   component: Card,
   parameters: { layout: "centered" },
-  argTypes: { date_created: { control: "date" } },
+  argTypes: {
+    date_created: { control: "date" },
+    company_image_url: { control: { type: "file", accept: ".jpg, .png" } },
+  },
   tags: ["autodocs"],
 } satisfies Meta<typeof Card>;
 
