@@ -2,14 +2,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
-import InputText from "./InputText";
+import TextArea from "./TextArea";
 
 const meta = {
-  title: "Form controls/Input text",
-  component: InputText,
+  title: "Form controls/Text area",
+  component: TextArea,
   parameters: { layout: "centered" },
   tags: ["autodocs"],
-} satisfies Meta<typeof InputText>;
+} satisfies Meta<typeof TextArea>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     label: "Name",
-    placeholder: "Eduardo Alvarez",
+    placeholder: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     required: true,
     value: "",
   },
