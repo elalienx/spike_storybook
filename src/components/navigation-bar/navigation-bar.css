@@ -3,9 +3,6 @@
   align-items: center;
   padding: var(--space-small) 24px;
   background-color: white;
-
-  /* debug color until stick it to the top */
-  /* background-color: var(--color-gray-light); */
 }
 
 /* Layout */
@@ -34,6 +31,7 @@
 
   width: var(--size);
   height: var(--size);
+  object-fit: contain;
   margin-right: var(--space-small);
 }
 

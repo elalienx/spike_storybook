@@ -17,34 +17,34 @@ type Story = StoryObj<typeof meta>;
 // Stories (variants)
 export const Primary: Story = {
   args: {
-    icon: "plus",
-    primary: true,
     label: "Click me",
+    primary: true,
+    icon: "plus",
   },
 };
 
 export const PrimaryBig: Story = {
   args: {
-    icon: "plus",
-    primary: true,
     label: "Click me",
+    primary: true,
     size: "big",
+    icon: "plus",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    icon: "plus",
     primary: false,
     label: "Click me",
+    icon: "plus",
   },
 };
 
 export const SecondaryBig: Story = {
   args: {
-    icon: "plus",
-    primary: false,
     label: "Click me",
+    primary: false,
+    icon: "plus",
     size: "big",
   },
 };

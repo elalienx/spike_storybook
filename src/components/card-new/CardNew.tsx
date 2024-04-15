@@ -4,7 +4,7 @@ import Button from "../button/Button";
 import "./card.css";
 import "./card-new.css";
 
-/** UI component to create a new assignment */
+/** UI component to create a new assignment. It has not modificable properties. */
 export default function CardNew() {
   return (
     <article className="card card-new">

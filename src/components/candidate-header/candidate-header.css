@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.candidate-header img {
+  object-fit: contain;
+}
+
 .candidate-header .candidate-image {
   --size: 72px;
 
