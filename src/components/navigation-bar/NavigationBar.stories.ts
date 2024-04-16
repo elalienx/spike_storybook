@@ -22,6 +22,7 @@ export const Default: Story = {
   args: {
     assignment_name: "Data Engineer",
     company_image_url: "",
+    response_rate: -1,
   },
 };
 export const WithNoContacted: Story = {
@@ -29,6 +30,7 @@ export const WithNoContacted: Story = {
     assignment_name: "Data Engineer",
     company_image_url:
       "https://media.licdn.com/dms/image/C4D0BAQH3hv1qu8sCrQ/company-logo_200_200/0/1667899788739/folksam_logo?e=1721260800&v=beta&t=-TSMOF4J0uygrJpyHNGmvPFUmSPaDEuj0Q_5jAkPPOk",
+    response_rate: -1,
   },
 };
 

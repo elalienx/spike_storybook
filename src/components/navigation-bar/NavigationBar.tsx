@@ -10,8 +10,8 @@ interface Props {
   /** The company logo */
   company_image_url: string;
 
-  /** How many candidates have responded to us after initial contact? No value indicates we haven't started to contact anyone yet */
-  response_rate?: number | undefined;
+  /** How many candidates have responded to us after initial contact? A value less than 0 indicates we haven't started to contact anyone yet */
+  response_rate: number;
 }
 
 /** The menu bar for the Candidate page. */
@@ -44,7 +44,7 @@ export default function NavigationBar(item: Props) {
       <img className="middle logo" src={Logo} />
 
       {/* Right */}
-      {response_rate === undefined ? KeepRightMargin : ResponseRate}
+      {response_rate < 0 ? KeepRightMargin : ResponseRate}
     </nav>
   );
 }
