@@ -17,6 +17,7 @@ interface Props {
   subtitle: string;
 }
 
+/** Shows the details of a candidate or company. */
 export default function ItemProfile(item: Props) {
   const { image_url, isCandidate, title, subtitle } = item;
 
