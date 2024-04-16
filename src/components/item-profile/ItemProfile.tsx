@@ -3,29 +3,31 @@ import ImageSquare from "../image-square/ImageSquare";
 import "./item-profile.css";
 
 interface Props {
-  /** The candidate or company image url */
-  image_url: string;
+  /** Full name of the candidate */
+  candidate_image_url: string;
 
-  /** Do the image belong to a candidate or company? To set up the correct placeholder image */
-  profile: "candidate" | "company";
+  /** The name of the candidate */
+  candidate_name: string;
 
-  /** The name of the candidate or company */
-  title: string;
-
-  /** Complementary details for the candidate or company */
-  subtitle: string;
+  /** The job title of the candidate */
+  candidate_job_title: string;
 }
 
-/** Shows the details of a candidate or company. */
+/** Shows the personal details of a candidate */
 export default function ItemProfile(item: Props) {
-  const { image_url, profile, title, subtitle } = item;
+  const { candidate_image_url, candidate_name, candidate_job_title } = item;
+
+  // Properties
+  const CharacterLimit = 20;
+  const Ellipsis = candidate_job_title.length > CharacterLimit ? "..." : "";
+  const JobTitle = candidate_job_title.slice(0, CharacterLimit) + Ellipsis;
 
   return (
     <div className="item-profile">
-      <ImageSquare src={image_url} profile={profile} />
+      <ImageSquare src={candidate_image_url} profile="candidate" />
       <div className="content">
-        {title}
-        <small className="label">{subtitle}</small>
+        {candidate_name}
+        <small className="label">{JobTitle}</small>
       </div>
     </div>
   );
