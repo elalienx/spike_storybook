@@ -11,17 +11,15 @@ interface Props {
   company_image_url: string;
 
   /** How many candidates have responded to us after initial contact? No value indicates we haven't started to contact anyone yet */
-  response_rate?: number;
+  response_rate?: number | undefined;
 }
 
 /** The menu bar for the Candidate page. */
-export default function NavigationBar({
-  assignment_name,
-  company_image_url,
-  response_rate = undefined,
-}: Props) {
+export default function NavigationBar(item: Props) {
+  const { assignment_name, company_image_url, response_rate } = item;
+
   // Properties
-  const Image = company_image_url === "" ? Placeholder : company_image_url;
+  const Image = company_image_url ? company_image_url : Placeholder;
 
   // Components
   const ResponseRate = (
