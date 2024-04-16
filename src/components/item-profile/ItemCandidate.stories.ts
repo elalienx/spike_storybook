@@ -2,17 +2,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
-import ItemProfile from "./ItemProfile";
+import ItemCandidate from "./ItemCandidate";
 
 const meta = {
-  title: "Components/Item Profile",
-  component: ItemProfile,
+  title: "Components/Item Candidate",
+  component: ItemCandidate,
   parameters: { layout: "centered" },
   argTypes: {
     candidate_image_url: { control: { type: "file", accept: ".jpg, .png" } },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof ItemProfile>;
+} satisfies Meta<typeof ItemCandidate>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

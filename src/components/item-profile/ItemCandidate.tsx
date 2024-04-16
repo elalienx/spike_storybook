@@ -1,6 +1,6 @@
 // Project files
 import ImageSquare from "../image-square/ImageSquare";
-import "./item-profile.css";
+import "./item-candidate.css";
 
 interface Props {
   /** Full name of the candidate */
@@ -14,7 +14,7 @@ interface Props {
 }
 
 /** Shows the personal details of a candidate */
-export default function ItemProfile(item: Props) {
+export default function ItemCandidate(item: Props) {
   const { candidate_image_url, candidate_name, candidate_job_title } = item;
 
   // Properties
@@ -23,7 +23,7 @@ export default function ItemProfile(item: Props) {
   const JobTitle = candidate_job_title.slice(0, CharacterLimit) + Ellipsis;
 
   return (
-    <div className="item-profile">
+    <div className="item-candidate">
       <ImageSquare src={candidate_image_url} profile="candidate" />
       <div className="content">
         {candidate_name}

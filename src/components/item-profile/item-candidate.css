@@ -1,10 +1,10 @@
-.item-profile {
+.item-candidate {
   display: flex;
   align-items: center;
   gap: var(--space-small);
 }
 
-.item-profile img {
+.item-candidate img {
   --size: 44px;
 
   width: var(--size);
