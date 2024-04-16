@@ -13,7 +13,7 @@ interface Props {
   candidate_job_title: string;
 }
 
-/** Shows the personal details of a candidate */
+/** Shows the personal details of a candidate. */
 export default function ItemCandidate(item: Props) {
   const { candidate_image_url, candidate_name, candidate_job_title } = item;
 
