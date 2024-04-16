@@ -1,6 +1,6 @@
 // Project files
 import Logo from "../../assets/logo-scoutr.svg";
-import Placeholder from "../../assets/placeholder-company.png";
+import ImageSquare from "../image-square/ImageSquare";
 import "./navigation-bar.css";
 
 interface Props {
@@ -18,9 +18,6 @@ interface Props {
 export default function NavigationBar(item: Props) {
   const { assignment_name, company_image_url, response_rate } = item;
 
-  // Properties
-  const Image = company_image_url ? company_image_url : Placeholder;
-
   // Components
   const KeepRightMargin = <div className="right div-to-keep-margin" />;
   const ResponseRate = (
@@ -35,7 +32,11 @@ export default function NavigationBar(item: Props) {
     <nav className="navigation-bar">
       {/* Left */}
       <div className="left assignment">
-        <img className="company-logo" src={Image} alt="Company logo" />
+        <ImageSquare
+          className="company-logo"
+          src={company_image_url}
+          alt="Company logo"
+        />
         <h1 className="title">{assignment_name}</h1>
       </div>
 

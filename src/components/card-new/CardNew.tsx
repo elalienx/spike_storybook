@@ -1,5 +1,5 @@
 // Project files
-import Placeholder from "../../assets/placeholder-company.png";
+import ImageSquare from "../image-square/ImageSquare";
 import Button from "../button/Button";
 import "./card.css";
 import "./card-new.css";
@@ -8,7 +8,7 @@ import "./card-new.css";
 export default function CardNew() {
   return (
     <article className="card card-new">
-      <img src={Placeholder} alt="A generic building" />
+      <ImageSquare src={""} alt="A generic building" />
       <h2>Role name</h2>
       <small className="label">Company name</small>
       <Button label={"New assignment"} primary={true} icon="plus" />

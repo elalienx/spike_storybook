@@ -1,6 +1,5 @@
 // Project files
-import PlaceholderCandidate from "../../assets/placeholder-candidate.png";
-import PlaceholderCompany from "../../assets/placeholder-company.png";
+import ImageSquare from "../image-square/ImageSquare";
 import "./item-profile.css";
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
   image_url: string;
 
   /** Do the image belong to a candidate or company? To set up the correct placeholder image */
-  isCandidate: boolean;
+  profile: "candidate" | "company";
 
   /** The name of the candidate or company */
   title: string;
@@ -19,15 +18,11 @@ interface Props {
 
 /** Shows the details of a candidate or company. */
 export default function ItemProfile(item: Props) {
-  const { image_url, isCandidate, title, subtitle } = item;
-
-  // Properties
-  const Placeholder = isCandidate ? PlaceholderCandidate : PlaceholderCompany;
-  const Image = image_url ? image_url : Placeholder;
+  const { image_url, profile, title, subtitle } = item;
 
   return (
     <div className="item-profile">
-      <img src={Image} />
+      <ImageSquare src={image_url} profile={profile} />
       <div className="content">
         {title}
         <small className="label">{subtitle}</small>
