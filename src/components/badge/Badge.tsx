@@ -10,7 +10,7 @@ interface Props {
   value: number;
 }
 
-/** Indicates progress or status in a sequence */
+/** Indicates the number in a progress or status sequence. */
 export default function Badge({ color = "gray", value = 0 }: Props) {
   return <div className={`badge ${color}`}>{value}</div>;
 }

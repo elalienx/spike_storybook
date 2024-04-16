@@ -3,7 +3,7 @@ import PlaceholderCandidate from "../../assets/placeholder-candidate.png";
 import PlaceholderCompany from "../../assets/placeholder-company.png";
 import "./candidate-header.css";
 
-interface iProps {
+interface Props {
   /** The unique indentifier of the candidate */
   id: number;
 
@@ -15,7 +15,7 @@ interface iProps {
 }
 
 /** A mobile component for table rows, styled to resemble a social media platform. */
-export default function CandidateHeader({ id, candidate, company }: iProps) {
+export default function CandidateHeader({ id, candidate, company }: Props) {
   const sourceCandidate = candidate === "" ? PlaceholderCandidate : candidate;
   const sourceCompany = company === "" ? PlaceholderCompany : company;
 

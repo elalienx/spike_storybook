@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import CandidateHeader from "./CandidateHeader";
 
 const meta = {
-  title: "Components/Candidate header",
+  title: "Components/Candidate Header",
   component: CandidateHeader,
   parameters: { layout: "centered" },
   argTypes: {

@@ -2,9 +2,3 @@
 @import url("./base//variables.css");
 @import url("./base/typography.css");
 @import url("./base/layout.css");
-
-/* Components */
-@import url("./components/item-badge.css");
-@import url("./components/item-profile.css");
-@import url("./components/table-candidate.css");
-@import url("./components/table.css");
