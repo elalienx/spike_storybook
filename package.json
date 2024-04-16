@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "vitest",
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "@vitejs/plugin-react-swc": "^3.5.0",
     "storybook": "^8.0.8",
     "typescript": "^5.2.2",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "vitest": "^1.5.0"
   }
 }
