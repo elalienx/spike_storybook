@@ -24,13 +24,10 @@ interface Props {
 }
 
 /** Primary UI component for user interaction. */
-export default function Button({
-  label,
-  primary,
-  icon = "plus",
-  size = "small",
-  ...props
-}: Props) {
+export default function Button(item: Props) {
+  const { label, primary, icon = "plus", size = "small", ...props } = item;
+
+  // Properties
   const classNamePrimary = primary ? "primary" : "";
 
   return (

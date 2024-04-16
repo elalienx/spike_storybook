@@ -19,12 +19,9 @@ interface Props {
 }
 
 /** Input control to allow multiple lines of text. */
-export default function InputText({
-  label,
-  placeholder,
-  required,
-  initialValue,
-}: Props) {
+export default function InputText(item: Props) {
+  const { label, placeholder, required, initialValue } = item;
+
   // Local state
   const [value, setValue] = useState(initialValue);
 

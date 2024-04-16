@@ -22,6 +22,7 @@ export default function NavigationBar(item: Props) {
   const Image = company_image_url ? company_image_url : Placeholder;
 
   // Components
+  const KeepRightMargin = <div className="right div-to-keep-margin" />;
   const ResponseRate = (
     <div className="right response-rate">
       <span className="value">{response_rate}</span>
@@ -29,7 +30,6 @@ export default function NavigationBar(item: Props) {
       <small className="label">Response rate</small>
     </div>
   );
-  const KeepRightMargin = <div className="right div-to-keep-margin" />;
 
   return (
     <nav className="navigation-bar">

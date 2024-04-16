@@ -16,6 +16,7 @@ interface Props {
 
 /** A mobile component for table rows, styled to resemble a social media platform. */
 export default function CandidateHeader({ id, candidate, company }: Props) {
+  // Properties
   const sourceCandidate = candidate ? candidate : PlaceholderCandidate;
   const sourceCompany = company ? company : PlaceholderCompany;
 

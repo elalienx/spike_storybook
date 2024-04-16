@@ -8,6 +8,7 @@ import "./card.css";
 export default function Card(item: Assignment) {
   const { assignment_name, company_name, company_image_url } = item;
 
+  // Properties
   const Image = company_image_url ? company_image_url : Placeholder;
 
   return (

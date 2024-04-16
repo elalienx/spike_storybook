@@ -1,5 +1,7 @@
-// Project files
+// Node modules
 import { useState } from "react";
+
+// Project files
 import "./input.css";
 
 interface Props {
@@ -17,12 +19,10 @@ interface Props {
 }
 
 /** Input control to allow a single line of text. */
-export default function InputText({
-  label,
-  placeholder,
-  required,
-  initialValue,
-}: Props) {
+export default function InputText(item: Props) {
+  const { label, placeholder, required, initialValue } = item;
+
+  // Local state
   const [value, setValue] = useState(initialValue);
 
   return (
