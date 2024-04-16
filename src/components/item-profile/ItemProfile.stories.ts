@@ -9,6 +9,7 @@ const meta = {
   component: ItemProfile,
   parameters: { layout: "centered" },
   argTypes: {
+    isCandidate: { control: { type: "boolean" } },
     image_url: { control: { type: "file", accept: ".jpg, .png" } },
   },
   tags: ["autodocs"],

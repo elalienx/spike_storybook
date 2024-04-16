@@ -1,6 +1,5 @@
 // Project files
-import PlaceholderCandidate from "../../assets/placeholder-candidate.png";
-import PlaceholderCompany from "../../assets/placeholder-company.png";
+import ImageSquare from "../image-square/ImageSquare";
 import "./candidate-header.css";
 
 interface Props {
@@ -8,29 +7,28 @@ interface Props {
   id: number;
 
   /** The name of the candidate */
-  candidate: string;
+  candidate_image_url: string;
 
   /** The name of the company */
-  company: string;
+  company_image_url: string;
 }
 
 /** A mobile component for table rows, styled to resemble a social media platform. */
-export default function CandidateHeader({ id, candidate, company }: Props) {
-  // Properties
-  const sourceCandidate = candidate ? candidate : PlaceholderCandidate;
-  const sourceCompany = company ? company : PlaceholderCompany;
+export default function CandidateHeader(item: Props) {
+  const { id, candidate_image_url, company_image_url } = item;
 
   return (
     <header className="candidate-header">
-      <img
+      <ImageSquare
+        src={candidate_image_url}
         className="candidate-image"
-        src={sourceCandidate}
         alt="Candidate profile picture"
+        profile="candidate"
       />
-      <img
+      <ImageSquare
+        src={company_image_url}
         className="company-image"
-        src={sourceCompany}
-        alt="Candidate current company logo"
+        alt="Company logo"
       />
       <small className="label">Profile #{id}</small>
     </header>
