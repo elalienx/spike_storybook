@@ -23,7 +23,7 @@ export default function CandidateHeader(item: Props) {
         src={candidate_image_url}
         className="candidate-image"
         alt="Candidate profile picture"
-        profileType="candidate"
+        profile="candidate"
       />
       <ImageSquare
         src={company_image_url}
