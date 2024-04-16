@@ -9,7 +9,11 @@ const meta = {
   component: Card,
   parameters: { layout: "centered" },
   argTypes: {
-    date_created: { control: "date" },
+    date_created: {
+      control: {
+        disable: true,
+      },
+    },
     company_image_url: { control: { type: "file", accept: ".jpg, .png" } },
   },
   tags: ["autodocs"],

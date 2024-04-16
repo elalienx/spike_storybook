@@ -23,7 +23,7 @@ export const CandidateWithNoImage: Story = {
     image_url: "",
     isCandidate: true,
     title: "George Domingez",
-    subtitle: "Data Engineer",
+    subtitle: "UX Lead",
   },
 };
 
@@ -33,7 +33,7 @@ export const CandidateWithImage: Story = {
       "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
     isCandidate: true,
     title: "Eduardo Alvarez",
-    subtitle: "Tech Lead",
+    subtitle: "Frontend Developer",
   },
 };
 
