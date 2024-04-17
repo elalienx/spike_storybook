@@ -14,11 +14,11 @@ interface Props {
 }
 
 /** A mobile component for table rows, styled to resemble a social media platform. */
-export default function CandidateHeader(item: Props) {
+export default function HeaderCandidate(item: Props) {
   const { id, candidate_image_url, company_image_url } = item;
 
   return (
-    <header className="candidate-header">
+    <header className="header-candidate">
       <ImageSquare
         src={candidate_image_url}
         className="candidate-image"
