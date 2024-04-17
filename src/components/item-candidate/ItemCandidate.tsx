@@ -19,14 +19,14 @@ export default function ItemCandidate(item: Props) {
 
   // Properties
   const CharacterLimit = 20;
-  const Ellipsis = candidate_job_title.length > CharacterLimit ? "..." : "";
-  const JobTitle = candidate_job_title.slice(0, CharacterLimit) + Ellipsis;
+  const Name = candidate_name.slice(0, CharacterLimit);
+  const JobTitle = candidate_job_title.slice(0, CharacterLimit);
 
   return (
     <div className="item-candidate">
       <ImageSquare src={candidate_image_url} profile="candidate" />
       <div className="content">
-        {candidate_name}
+        {Name}
         <small className="label">{JobTitle}</small>
       </div>
     </div>

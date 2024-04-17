@@ -23,8 +23,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     company_image_url: "",
-    title: "Novare",
-    duration: 12,
+    company_name: "Novare",
+    company_duration_in_months: 12,
   },
 };
 
@@ -32,8 +32,8 @@ export const Complete: Story = {
   args: {
     company_image_url:
       "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
-    title: "Novare",
-    duration: 72,
+    company_name: "Novare",
+    company_duration_in_months: 72,
   },
 };
 
@@ -41,7 +41,7 @@ export const CompleteButShortDuration: Story = {
   args: {
     company_image_url:
       "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
-    title: "Novare",
-    duration: 3,
+    company_name: "Novare",
+    company_duration_in_months: 3,
   },
 };

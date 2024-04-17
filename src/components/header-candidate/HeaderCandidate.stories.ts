@@ -2,11 +2,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
-import CandidateHeader from "./CandidateHeader";
+import HeaderCandidate from "./HeaderCandidate";
 
 const meta = {
-  title: "Components/Candidate Header",
-  component: CandidateHeader,
+  title: "Components/Header Candidate",
+  component: HeaderCandidate,
   parameters: { layout: "centered" },
   argTypes: {
     candidate_image_url: {
@@ -17,7 +17,7 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof CandidateHeader>;
+} satisfies Meta<typeof HeaderCandidate>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

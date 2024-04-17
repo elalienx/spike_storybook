@@ -1,53 +1,53 @@
 /* Layout */
-.table-candidate .id {
+.row-candidate .id {
   display: none;
 }
 
 /* Design */
-.table-candidate .candidate img,
-.table-candidate .company img {
+.row-candidate .candidate img,
+.row-candidate .company img {
   display: none; /* because we use a separate component to show them in a better way */
 }
 
 /* Laptop half screen */
 @media (min-width: 700px) {
   /* Layout */
-  .table-candidate .header-candidate {
+  .row-candidate .header-candidate {
     display: none;
   }
 
-  .table-candidate .id {
+  .row-candidate .id {
     display: table-cell;
   }
 
-  .table-candidate .candidate img,
-  .table-candidate .company img {
+  .row-candidate .candidate img,
+  .row-candidate .company img {
     display: unset;
   }
 
   /* Design */
-  .table-candidate .id {
+  .row-candidate .id {
     text-align: center;
   }
 
-  .table-candidate .candidate img {
+  .row-candidate .candidate img {
     --size: 44px;
   }
 
-  .table-candidate .company img {
+  .row-candidate .company img {
     --size: 24px;
   }
 
   /* Column widths */
-  .table-candidate .column-small {
+  .row-candidate .column-small {
     width: 6.25%;
   }
 
-  .table-candidate .column-medium {
+  .row-candidate .column-medium {
     width: 11.25%;
   }
 
-  .table-candidate .column-big {
+  .row-candidate .column-big {
     width: 23.75%;
   }
 }
