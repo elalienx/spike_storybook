@@ -30,6 +30,25 @@ export const Empty: Story = {
     id: 1,
     projectId: 1,
     date_created: "2024-01-31",
+    linked_in_url: "",
+    candidate_name: "",
+    candidate_job_title: "",
+    candidate_image_url: "",
+    company_name: "",
+    company_duration_in_months: 0,
+    company_image_url: "",
+    notes: "",
+    relevance: 0,
+    contact_status: 0,
+    contact_date: "",
+  },
+};
+
+export const Minimal: Story = {
+  args: {
+    id: 2,
+    projectId: 1,
+    date_created: "2024-01-31",
     linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     candidate_name: "Eduardo Alvarez",
     candidate_job_title: "",
@@ -46,7 +65,7 @@ export const Empty: Story = {
 
 export const Full: Story = {
   args: {
-    id: 2,
+    id: 3,
     projectId: 1,
     date_created: "2024-01-31",
     linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
