@@ -6,6 +6,7 @@ body {
   margin: 0;
   color: var(--color-black);
   font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
   -webkit-font-smoothing: auto; /* To make text look great on Apple devices */
 }
 

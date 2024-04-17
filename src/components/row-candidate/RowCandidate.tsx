@@ -47,7 +47,7 @@ export default function RowCandidate(item: Candidate) {
           color={"gray"}
           value={item.contact_status}
           title={"bar"}
-          subtitle="jazz"
+          subtitle="2024-01-32"
         />
       </td>
     </tr>
