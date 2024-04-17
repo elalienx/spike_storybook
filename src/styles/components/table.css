@@ -53,6 +53,7 @@ td::before {
   td {
     display: table-cell;
     padding: var(--space-small);
+    vertical-align: middle;
   }
 
   td::before {
