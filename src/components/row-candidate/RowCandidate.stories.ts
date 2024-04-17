@@ -9,27 +9,14 @@ const meta = {
   component: RowCandidate,
   parameters: { layout: "fullscreen" },
   argTypes: {
-    date_created: {
-      control: {
-        disable: true,
-      },
-    },
-    linked_in_url: {
-      control: {
-        disable: true,
-      },
-    },
-    projectId: {
-      control: {
-        disable: true,
-      },
-    },
-    candidate_image_url: {
-      control: { type: "file", accept: ".jpg, .png, .webp" },
-    },
-    company_image_url: {
-      control: { type: "file", accept: ".jpg, .png, .webp" },
-    },
+    id: { control: { type: "number", min: 1 } },
+    projectId: { control: { disable: true } },
+    date_created: { control: { disable: true } },
+    linked_in_url: { control: { disable: true } },
+    candidate_image_url: { control: { type: "file", accept: ".jpg, .png" } },
+    company_image_url: { control: { type: "file", accept: ".jpg, .png" } },
+    relevance: { control: { type: "range", min: 0, max: 5 } },
+    contact_status: { control: { type: "range", min: 0, max: 5 } },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof RowCandidate>;

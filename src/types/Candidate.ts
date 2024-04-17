@@ -35,7 +35,7 @@ export default interface Candidate {
   /** Rating from 1 to 5 indicating the candidate's relevance to the assignment, with higher values being more relevant */
   relevance: number;
 
-  /** Rating from 1 to 6 indicating the status of contact with the candidate, with lower values indicating more recent contact */
+  /** Rating from 1 to 5 indicating the status of contact with the candidate, with lower values indicating more recent contact */
   contact_status: number;
 
   /** Date of the most recent contact with the candidate. */
