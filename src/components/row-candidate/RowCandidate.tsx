@@ -21,13 +21,14 @@ export default function RowCandidate(item: Candidate) {
   };
   const company = {
     company_image_url: item.company_image_url,
-    title: item.company_name,
-    duration: item.company_duration_in_months,
+    company_name: item.company_name,
+    company_duration_in_months: item.company_duration_in_months,
   };
   const relevance = {
     color: data.relevance.colors[item.relevance],
     value: item.relevance,
     title: data.relevance.labels[item.relevance],
+    subtitle: "",
   };
   const contact = {
     color: data.contact.colors[item.contact_status],
