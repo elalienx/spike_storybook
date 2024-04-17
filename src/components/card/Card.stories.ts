@@ -14,7 +14,9 @@ const meta = {
         disable: true,
       },
     },
-    company_image_url: { control: { type: "file", accept: ".jpg, .png" } },
+    company_image_url: {
+      control: { type: "file", accept: ".jpg, .png, .webp" },
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Card>;

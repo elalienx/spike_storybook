@@ -9,7 +9,9 @@ const meta = {
   component: ItemCandidate,
   parameters: { layout: "centered" },
   argTypes: {
-    candidate_image_url: { control: { type: "file", accept: ".jpg, .png" } },
+    candidate_image_url: {
+      control: { type: "file", accept: ".jpg, .png, .webp" },
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof ItemCandidate>;

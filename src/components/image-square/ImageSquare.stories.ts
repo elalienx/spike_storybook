@@ -8,9 +8,9 @@ const meta = {
   title: "Components/Image Square",
   component: ImageSquare,
   parameters: { layout: "centered" },
-  args: { profileType: "company" },
+  args: { profile: "company" },
   argTypes: {
-    src: { control: { type: "file", accept: ".jpg, .png" } },
+    src: { control: { type: "file", accept: ".jpg, .png, .webp" } },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof ImageSquare>;
@@ -34,13 +34,13 @@ export const CompanyWithImage: Story = {
 export const CandidateWithNoImage: Story = {
   args: {
     src: "",
-    profileType: "candidate",
+    profile: "candidate",
   },
 };
 
 export const CandidateWithImage: Story = {
   args: {
     src: "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
-    profileType: "candidate",
+    profile: "candidate",
   },
 };
