@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import RowCandidate from "./RowCandidate";
 
 const meta = {
-  title: "Components/Row Candidate",
+  title: "Tables/Row Candidate",
   component: RowCandidate,
   parameters: { layout: "fullscreen" },
   argTypes: {
