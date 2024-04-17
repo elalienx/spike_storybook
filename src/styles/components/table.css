@@ -11,6 +11,7 @@ thead {
 tr {
   display: block; /* to enable margin bottom between each row */
   margin-bottom: var(--space-big);
+  background-color: white;
 }
 
 td {

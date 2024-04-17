@@ -1,6 +1,6 @@
 // Project files
 import ImageSquare from "../image-square/ImageSquare";
-import "./candidate-header.css";
+import "./header-candidate.css";
 
 interface Props {
   /** The unique indentifier of the candidate */
