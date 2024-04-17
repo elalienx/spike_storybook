@@ -9,9 +9,7 @@ const meta = {
   component: NavigationBar,
   parameters: { layout: "fullscreen" },
   argTypes: {
-    company_image_url: {
-      control: { type: "file", accept: ".jpg, .png, .webp" },
-    },
+    company_image_url: { control: { type: "file", accept: ".jpg, .png" } },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof NavigationBar>;

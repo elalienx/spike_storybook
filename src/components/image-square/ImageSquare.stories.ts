@@ -9,9 +9,7 @@ const meta = {
   component: ImageSquare,
   parameters: { layout: "centered" },
   args: { profile: "company" },
-  argTypes: {
-    src: { control: { type: "file", accept: ".jpg, .png, .webp" } },
-  },
+  argTypes: { src: { control: { type: "file", accept: ".jpg, .png" } } },
   tags: ["autodocs"],
 } satisfies Meta<typeof ImageSquare>;
 
