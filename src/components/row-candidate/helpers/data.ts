@@ -1,7 +1,8 @@
 // Project files
 import formatDate from "../../../scripts/formatDate";
 import Candidate from "../../../types/Candidate";
-import metaData from "./meta-data";
+import { contactColors, contactTitle } from "./meta-data";
+import { relevanceColors, relevancetitle } from "./meta-data";
 
 export function data(item: Candidate) {
   const header = {
@@ -20,15 +21,15 @@ export function data(item: Candidate) {
     company_duration_in_months: item.company_duration_in_months,
   };
   const relevance = {
-    color: metaData.relevance.colors[item.relevance],
+    color: relevanceColors(item.relevance),
     value: item.relevance,
-    title: metaData.relevance.labels[item.relevance],
+    title: relevancetitle(item.relevance),
     subtitle: "",
   };
   const contact = {
-    color: metaData.contact.colors[item.contact_status],
+    color: contactColors(item.contact_status),
     value: item.contact_status,
-    title: metaData.contact.labels[item.contact_status],
+    title: contactTitle(item.contact_status),
     subtitle: formatDate(item.contact_date),
   };
 

@@ -78,7 +78,7 @@ export const Full: Story = {
     company_image_url:
       "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
     notes: "Highly qualified, but a bit egocentric...",
-    relevance: 4,
+    relevance: 5,
     contact_status: 1,
     contact_date: "2024-04-02 21:00:30.610279",
   },
