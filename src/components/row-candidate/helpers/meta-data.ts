@@ -21,7 +21,7 @@ export function contactTitle(value: number): string {
 
 export function relevancetitle(value: number): string {
   // prettier-ignore
-  const label = ["unlabeled", "not relevant", "junior", "maybe", "yes", "super yes"];
+  const label = ["unlabeled", "not relevant", "too junior", "maybe", "yes", "super yes"];
 
   return label[value];
 }
