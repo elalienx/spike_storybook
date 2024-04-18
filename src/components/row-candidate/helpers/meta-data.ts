@@ -1,5 +1,5 @@
 // Project files
-import Color from "../../types/Color";
+import Color from "../../../types/Color";
 
 // Properties
 // prettier-ignore
