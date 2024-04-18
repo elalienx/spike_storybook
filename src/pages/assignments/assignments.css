@@ -1,0 +1,39 @@
+#assignments {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--space-medium);
+    background-color: pink;
+  }
+
+  .hero img {
+    width: 155px;
+    height: auto;
+  }
+}
+
+/* Table */
+@media (min-width: 700px) {
+  #assignments {
+    .hero {
+      flex-direction: row;
+      background-color: aliceblue;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      line-height: 0.7; /* to force the 2 lines to touch each other. This is our stylistic decision! */
+      letter-spacing: -3.5px;
+      margin-bottom: var(--space-medium);
+    }
+
+    .hero .subtitle {
+      font-size: 28px;
+      color: var(--color-gray);
+    }
+
+    .hero img {
+      width: initial;
+    }
+  }
+}
