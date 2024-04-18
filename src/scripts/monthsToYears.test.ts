@@ -2,7 +2,6 @@
 import { expect, test } from "vitest";
 
 // Project files
-import "./monthsToYears";
 import monthsToYears from "./monthsToYears";
 
 test("Expect value of 0 to display 0", () => {
