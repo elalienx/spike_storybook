@@ -29,7 +29,7 @@ export const Empty: Story = {
   args: {
     id: 1,
     projectId: 1,
-    date_created: "2024-01-31",
+    date_created: "2024-01-31 21:00:30.610279",
     linked_in_url: "",
     candidate_name: "",
     candidate_job_title: "",
@@ -48,7 +48,7 @@ export const Minimal: Story = {
   args: {
     id: 2,
     projectId: 1,
-    date_created: "2024-01-31",
+    date_created: "2024-01-31 21:00:30.610279",
     linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     candidate_name: "Eduardo Alvarez",
     candidate_job_title: "",
@@ -67,7 +67,7 @@ export const Full: Story = {
   args: {
     id: 3,
     projectId: 1,
-    date_created: "2024-01-31",
+    date_created: "2024-01-31 21:00:30.610279",
     linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     candidate_name: "Eduardo Alvarez Nowak",
     candidate_job_title: "Tech Education Lead",
@@ -80,6 +80,6 @@ export const Full: Story = {
     notes: "Highly qualified, but a bit egocentric...",
     relevance: 4,
     contact_status: 1,
-    contact_date: "2024-01-31",
+    contact_date: "2024-04-02 21:00:30.610279",
   },
 };
