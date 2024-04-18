@@ -57,7 +57,7 @@ export const Minimal: Story = {
     company_duration_in_months: 0,
     company_image_url: "",
     notes: "",
-    relevance: 0,
+    relevance: 1,
     contact_status: 0,
     contact_date: "",
   },
