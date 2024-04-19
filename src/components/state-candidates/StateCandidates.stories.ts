@@ -23,11 +23,12 @@ export const Empty: Story = {
     image_url: ImageStateEmtpyCandidates,
     image_alt: "A male a female construction engineers checking a blueprint",
     messages: [
-      "Welcome to the COMPANY_NAME ASSIGNMENT_NAME project",
-      "Click below to start adding candidates.",
+      "Welcome to the candidates page.",
+      "Click below to get started.",
     ],
     button_label: "Add Candidates",
-    button_icon: "plus",
+    button_icon_prefix: "fab",
+    button_icon: "linkedin",
   },
 };
 

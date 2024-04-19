@@ -13,6 +13,13 @@ import {
 library.add(faLinkedin);
 
 // Solid
-library.add(faCircleCheck, faPlus, faChevronDown, faFolderOpen, faRotateRight);
+library.add(
+  faCircleCheck,
+  faPlus,
+  faChevronDown,
+  faFolderOpen,
+  faRotateRight,
+  faLinkedin
+);
 
 export default library;

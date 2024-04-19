@@ -26,7 +26,7 @@ export default function StateAssignments(item: Props) {
   const { image_url, image_alt, messages, button_label, button_icon } = item;
 
   // Components
-  const Messages = messages.map((item) => <p>{item}</p>);
+  const Messages = messages.map((item, index) => <p key={index}>{item}</p>);
 
   return (
     <div className="state-assignments">

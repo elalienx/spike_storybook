@@ -1,5 +1,5 @@
 // Nodem modules
-import { IconName } from "@fortawesome/fontawesome-svg-core";
+import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 // Project files
 import Button from "../button/Button";
@@ -15,24 +15,28 @@ interface Props {
   /** An array containing the paragrapgs describing the state. */
   messages: string[];
 
-  /** The name of the company hiring for the assignment. */
-  company_name?: string;
-
-  /** The name of the assignment or role to fulfill. */
-  assignment_name?: string;
-
   /** The label of the action available to the state. */
   button_label: string;
+
+  /** */
+  button_icon_prefix?: IconPrefix;
 
   /** The icon for button. */
   button_icon: IconName;
 }
 
 export default function StateCandidates(item: Props) {
-  const { image_url, image_alt, messages, button_label, button_icon } = item;
+  const {
+    image_url,
+    image_alt,
+    messages,
+    button_label,
+    button_icon_prefix,
+    button_icon,
+  } = item;
 
   // Components
-  const Messages = messages.map((item) => <p>{item}</p>);
+  const Messages = messages.map((item, index) => <p key={index}>{item}</p>);
 
   return (
     <div className="state-assignment">
@@ -41,6 +45,7 @@ export default function StateCandidates(item: Props) {
         {Messages}
         <Button
           label={button_label}
+          icon_prefix={button_icon_prefix}
           icon={button_icon}
           primary={true}
           size="big"
