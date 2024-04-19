@@ -12,6 +12,20 @@ body {
 
 image {
   display: inline-block; /* to remove the weird space bottom that inline elements have */
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+ul.no-bullets {
+  padding: 0;
+}
+
+/* 
+* Layout  
+* This is the width of 12 column layout grid, used in Sketch to design the app
+*/
+.layout {
+  width: min(1200px, 100% - 48px); /* 48px is 24px per side */
+  margin-inline: auto;
+  margin-bottom: var(--space-big);
 }

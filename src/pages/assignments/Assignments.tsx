@@ -4,7 +4,8 @@ import "./assignments.css";
 
 export default function Assignments() {
   return (
-    <div id="assignments">
+    <div id="assignments" className="layout">
+      {/* Hero */}
       <header className="hero">
         <div className="content">
           <h1>
@@ -18,13 +19,20 @@ export default function Assignments() {
             concise summaries of professionals presented in a easy table format.
           </p>
         </div>
-        <img
-          src={ImageHero}
-          alt="A woman and a man sitting on a table looking at a laptop"
-        />
+        <div className="media">
+          <img
+            className="image"
+            src={ImageHero}
+            alt="A woman and a man sitting on a table looking at a laptop"
+          />
+        </div>
       </header>
-      <ul className="no-bullets cards">(cards goes here)</ul>
-      <footer>
+
+      {/* Cards */}
+      <ul className="no-bullets cards">(cards go here)</ul>
+
+      {/* Footer */}
+      <footer className="footer">
         <small>© 2024 Eduardo Alvarez all rights reserved.</small>
         <small>
           GitHub:{" "}

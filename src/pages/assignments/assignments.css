@@ -1,25 +1,41 @@
 #assignments {
+  /* HERO */
+  /* Layout */
   .hero {
+    margin-top: 24px;
     display: flex;
     flex-direction: column-reverse;
     gap: var(--space-medium);
-    background-color: pink;
   }
 
+  /* Design */
   .hero img {
     width: 155px;
-    height: auto;
+  }
+
+  /* CARDS */
+
+  /* FOOTER */
+  .footer {
+    color: var(--color-gray);
   }
 }
 
 /* Table */
 @media (min-width: 700px) {
   #assignments {
+    /* Layout */
     .hero {
-      flex-direction: row;
-      background-color: aliceblue;
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
 
+    .hero .media {
+      text-align: center;
+    }
+
+    /* Design */
     .hero h1 {
       font-size: 72px;
       line-height: 0.7; /* to force the 2 lines to touch each other. This is our stylistic decision! */
