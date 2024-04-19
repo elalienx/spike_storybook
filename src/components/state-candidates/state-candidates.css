@@ -18,17 +18,10 @@
 /* Tablet */
 @media (min-width: 700px) {
   .state-assignment {
-    flex-direction: row;
-
-    /* Layout */
-    .content {
-      text-align: left;
-    }
-
     /* Design */
     img {
       width: auto;
-      height: 250px;
+      height: 275px;
     }
   }
 }
