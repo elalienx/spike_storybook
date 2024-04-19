@@ -1,0 +1,47 @@
+#assignments {
+  /* Layout */
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--space-medium);
+    margin-top: 24px;
+  }
+
+  /* Design */
+  .hero img {
+    width: 155px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 700px) {
+  #assignments {
+    /* Layout */
+    .hero {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero .media {
+      text-align: center;
+    }
+
+    /* Design */
+    .hero h1 {
+      font-size: 72px;
+      line-height: 0.7; /* to force the 2 lines to touch each other. This is our stylistic decision! */
+      letter-spacing: -3.5px;
+      margin-bottom: var(--space-medium);
+    }
+
+    .hero .subtitle {
+      font-size: 28px;
+      color: var(--color-gray);
+    }
+
+    .hero img {
+      width: initial;
+    }
+  }
+}

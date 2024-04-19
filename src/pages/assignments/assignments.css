@@ -1,67 +1,21 @@
 #assignments {
   display: flex;
   flex-direction: column;
+  width: min(960px, 100% - 48px); /* 48px is 24px per side */
   min-height: 100vh;
+  margin-inline: auto;
+  padding-top: 24px;
+  padding-bottom: var(--space-big);
 
   /* CONTAINER */
   .container {
     flex: 1;
   }
-
-  /* -- HERO */
-  /* Layout */
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: var(--space-medium);
-    margin-top: 24px;
-  }
-
-  /* Design */
-  .hero img {
-    width: 155px;
-  }
-
-  /* -- CARDS */
-  .cards {
-  }
-
-  /* FOOTER */
-  .footer {
-    flex-shrink: 0;
-    color: var(--color-gray);
-  }
 }
 
-/* Table */
+/* Tablet */
 @media (min-width: 700px) {
   #assignments {
-    /* Layout */
-    .hero {
-      margin-top: 64px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero .media {
-      text-align: center;
-    }
-
-    /* Design */
-    .hero h1 {
-      font-size: 72px;
-      line-height: 0.7; /* to force the 2 lines to touch each other. This is our stylistic decision! */
-      letter-spacing: -3.5px;
-      margin-bottom: var(--space-medium);
-    }
-
-    .hero .subtitle {
-      font-size: 28px;
-      color: var(--color-gray);
-    }
-
-    .hero img {
-      width: initial;
-    }
+    padding-top: 64px; /** big space for hero */
   }
 }
