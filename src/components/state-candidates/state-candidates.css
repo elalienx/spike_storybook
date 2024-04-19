@@ -1,0 +1,34 @@
+.state-assignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-medium);
+
+  /* Layout */
+  .content {
+    text-align: center;
+  }
+
+  /* Design */
+  img {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 700px) {
+  .state-assignment {
+    flex-direction: row;
+
+    /* Layout */
+    .content {
+      text-align: left;
+    }
+
+    /* Design */
+    img {
+      width: auto;
+      height: 250px;
+    }
+  }
+}

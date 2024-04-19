@@ -4,6 +4,8 @@ import Hero from "./Hero";
 import "./assignments.css";
 
 export default function Assignments() {
+  
+
   return (
     <div id="assignments">
       <div className="container">
