@@ -6,14 +6,11 @@
   /* CONTAINER */
   .container {
     flex: 1;
-    background-color: aquamarine;
   }
 
   /* -- HERO */
   /* Layout */
   .hero {
-    background-color: pink;
-
     display: flex;
     flex-direction: column-reverse;
     gap: var(--space-medium);
@@ -27,12 +24,10 @@
 
   /* -- CARDS */
   .cards {
-    background-color: lightgreen;
   }
 
   /* FOOTER */
   .footer {
-    background-color: aliceblue;
     flex-shrink: 0;
     color: var(--color-gray);
   }
