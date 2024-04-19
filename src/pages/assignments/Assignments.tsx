@@ -5,31 +5,34 @@ import "./assignments.css";
 export default function Assignments() {
   return (
     <div id="assignments" className="layout">
-      {/* Hero */}
-      <header className="hero">
-        <div className="content">
-          <h1>
-            Meet
-            <br />
-            Scoutr
-          </h1>
-          <span className="subtitle">Your LinkedIn Headhunter Companion</span>
-          <p>
-            Scoutr revolutionizes your LinkedIn scouting experience, providing
-            concise summaries of professionals presented in a easy table format.
-          </p>
-        </div>
-        <div className="media">
-          <img
-            className="image"
-            src={ImageHero}
-            alt="A woman and a man sitting on a table looking at a laptop"
-          />
-        </div>
-      </header>
+      <div className="container">
+        {/* Hero */}
+        <header className="hero">
+          <div className="content">
+            <h1>
+              Meet
+              <br />
+              Scoutr
+            </h1>
+            <span className="subtitle">Your LinkedIn Headhunter Companion</span>
+            <p>
+              Scoutr revolutionizes your LinkedIn scouting experience, providing
+              concise summaries of professionals presented in a easy table
+              format.
+            </p>
+          </div>
+          <div className="media">
+            <img
+              className="image"
+              src={ImageHero}
+              alt="A woman and a man sitting on a table looking at a laptop"
+            />
+          </div>
+        </header>
 
-      {/* Cards */}
-      <ul className="no-bullets cards">(cards go here)</ul>
+        {/* Cards */}
+        <ul className="no-bullets cards">(cards go here)</ul>
+      </div>
 
       {/* Footer */}
       <footer className="footer">

@@ -1,11 +1,23 @@
 #assignments {
-  /* HERO */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* CONTAINER */
+  .container {
+    flex: 1;
+    background-color: aquamarine;
+  }
+
+  /* -- HERO */
   /* Layout */
   .hero {
-    margin-top: 24px;
+    background-color: pink;
+
     display: flex;
     flex-direction: column-reverse;
     gap: var(--space-medium);
+    margin-top: 24px;
   }
 
   /* Design */
@@ -13,10 +25,15 @@
     width: 155px;
   }
 
-  /* CARDS */
+  /* -- CARDS */
+  .cards {
+    background-color: lightgreen;
+  }
 
   /* FOOTER */
   .footer {
+    background-color: aliceblue;
+    flex-shrink: 0;
     color: var(--color-gray);
   }
 }
