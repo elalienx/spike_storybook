@@ -3,7 +3,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 // Project files
 import Button from "../button/Button";
-import "./state-assignment.css";
+import "./state-candidates.css";
 
 interface Props {
   /** The URL of the image to illustrate the state */
@@ -22,7 +22,7 @@ interface Props {
   button_icon: IconName;
 }
 
-export default function StateAssignment(item: Props) {
+export default function StateCandidates(item: Props) {
   const { image_url, image_alt, messages, button_label, button_icon } = item;
 
   // Components

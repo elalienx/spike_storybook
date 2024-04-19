@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Project files
 import StateAssignments from "./StateAssignments";
 import ImageStateError from "../../assets/state-error.png";
-import ImageStateAssignmentsEmpty from "../../assets/state-assignments-empty.png";
+import ImageStateEmptyAssignments from "../../assets/state-empty-assignments.png";
 
 const meta = {
   title: "States/Assignments",
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 // Stories (variants)
 export const Empty: Story = {
   args: {
-    image_url: ImageStateAssignmentsEmpty,
+    image_url: ImageStateEmptyAssignments,
     image_alt: "A male a female construction engineers checking a blueprint",
     messages: [
       "Seems like you haven’t created any assigments yet.",

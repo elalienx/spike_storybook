@@ -29,7 +29,7 @@ export default function StateAssignments(item: Props) {
   const Messages = messages.map((item) => <p>{item}</p>);
 
   return (
-    <div className="state-assignment">
+    <div className="state-assignments">
       <img src={image_url} alt={image_alt} />
       <div className="content">
         {Messages}
