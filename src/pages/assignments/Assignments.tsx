@@ -23,15 +23,13 @@ export default function Assignments(item: Props) {
 
   return (
     <div id="assignments">
-      <div className="container">
-        <Hero />
-        <section className="grid">
-          {status === "loading" && <Loader />}
-          {status === "empty" && <p>Empty 📭</p>}
-          {status === "content" && Cards}
-          {status === "error" && <p>Error ❌</p>}
-        </section>
-      </div>
+      <Hero />
+      <section className="section">
+        {status === "loading" && <Loader />}
+        {status === "empty" && <p>Empty 📭</p>}
+        {status === "content" && <div className="columns">{Cards}</div>}
+        {status === "error" && <p>Error ❌</p>}
+      </section>
       <Footer />
     </div>
   );

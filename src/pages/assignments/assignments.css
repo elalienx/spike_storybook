@@ -1,19 +1,33 @@
 #assignments {
-  display: flex;
-  flex-direction: column;
-  width: min(960px, 100% - 48px); /* 48px is 24px per side */
+  background-color: lightgray;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-big);
+  width: min(960px, 100% - 24px - 24px); /* 24px per sidee */
   min-height: 100vh;
   margin-inline: auto;
-  padding-top: 24px;
-  padding-bottom: var(--space-big);
+  padding: 24px 0;
 
-  /* CONTAINER */
-  .container {
-    flex: 1;
+  .hero {
+    background-color: pink;
   }
 
-  .container .hero {
-    margin-bottom: var(--space-big);
+  .section {
+    background-color: lightgreen;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .section .columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-medium);
+  }
+
+  .footer {
+    background-color: aliceblue;
   }
 }
 
@@ -21,11 +35,5 @@
 @media (min-width: 700px) {
   #assignments {
     padding-top: 64px; /** big space for hero */
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-medium);
-    }
   }
 }
