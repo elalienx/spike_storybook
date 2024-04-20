@@ -1,6 +1,6 @@
 /* Small */
 .button.small {
-  min-width: 100px;
+  min-width: 95px;
   padding: 6px 18px;
   font-size: var(--font-size-small);
 }
