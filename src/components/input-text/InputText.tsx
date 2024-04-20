@@ -1,5 +1,5 @@
 // Node modules
-import { useState } from "react";
+import { useRef } from "react";
 
 // Project files
 import "./input.css";
@@ -15,15 +15,15 @@ interface Props {
   required: boolean;
 
   /** The text the user writes in the field */
-  initialValue?: string;
+  defaultValue: string;
 }
 
 /** Input control to allow a single line of text. */
 export default function InputText(item: Props) {
-  const { label, placeholder, required, initialValue } = item;
+  const { label, placeholder, required, defaultValue } = item;
 
   // Local state
-  const [value, setValue] = useState(initialValue);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <label className="input">
@@ -32,8 +32,8 @@ export default function InputText(item: Props) {
         type="text"
         placeholder={placeholder}
         required={required}
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
+        ref={inputRef}
+        defaultValue={defaultValue}
       />
     </label>
   );

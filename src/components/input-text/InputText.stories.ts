@@ -20,7 +20,7 @@ export const Empty: Story = {
     label: "Name",
     placeholder: "Eduardo Alvarez",
     required: true,
-    initialValue: "",
+    defaultValue: "",
   },
 };
 
@@ -29,6 +29,6 @@ export const WithText: Story = {
     label: "Name",
     placeholder: "Eduardo Alvarez",
     required: true,
-    initialValue: "Cecilia Nowak",
+    defaultValue: "Cecilia Nowak",
   },
 };

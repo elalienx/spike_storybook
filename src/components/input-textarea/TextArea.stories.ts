@@ -20,7 +20,7 @@ export const Empty: Story = {
     label: "Name",
     placeholder: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     required: true,
-    initialValue: "",
+    defaultValue: "",
   },
 };
 
@@ -29,7 +29,7 @@ export const WithText: Story = {
     label: "Name",
     placeholder: "Eduardo Alvarez",
     required: true,
-    initialValue:
+    defaultValue:
       "https://www.linkedin.com/in/susanna-vaara-0b33b03a/\nhttps://www.linkedin.com/in/farzad-golchin-1926461b/",
   },
 };
