@@ -11,11 +11,21 @@
   .container {
     flex: 1;
   }
+
+  .container .hero {
+    margin-bottom: var(--space-big);
+  }
 }
 
 /* Tablet */
 @media (min-width: 700px) {
   #assignments {
     padding-top: 64px; /** big space for hero */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-medium);
+    }
   }
 }
