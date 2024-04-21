@@ -1,6 +1,4 @@
 #assignments {
-  background-color: lightgray;
-
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: var(--space-big);
@@ -9,25 +7,15 @@
   margin-inline: auto;
   padding: 24px 0;
 
-  .hero {
-    background-color: pink;
-  }
-
-  .section {
-    background-color: lightgreen;
-
+  .section.loading {
     display: grid;
     place-items: center;
   }
 
-  .section .columns {
+  .section.content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-medium);
-  }
-
-  .footer {
-    background-color: aliceblue;
   }
 }
 

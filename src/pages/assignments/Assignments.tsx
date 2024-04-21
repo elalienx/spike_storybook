@@ -10,10 +10,14 @@ import StateEmpty from "./StateEmpty";
 import StateError from "./StateError";
 
 interface Props {
+  /** The assignments comming from the database. */
   data: any;
+
+  /** The status of calling the server. */
   status: Status;
 }
 
+/** The homepage of Scoutr and the place to create new assignments. */
 export default function Assignments(item: Props) {
   // Local state
   const { data, status } = item;
@@ -26,11 +30,11 @@ export default function Assignments(item: Props) {
   return (
     <div id="assignments">
       <Hero />
-      <section className="section">
+      <section className={`section ${status}`}>
         {status === "loading" && <Loader />}
         {status === "empty" && <StateEmpty />}
         {status === "error" && <StateError />}
-        {status === "content" && <div className="columns">{Cards}</div>}
+        {status === "content" && Cards}
       </section>
       <Footer />
     </div>

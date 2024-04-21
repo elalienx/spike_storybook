@@ -31,10 +31,12 @@ p {
 
 a {
   color: var(--color-blue);
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-cyan);
+  color: var(--color-blue-dark);
+  text-decoration: underline;
 }
 
 small {
