@@ -35,7 +35,7 @@ export const Complete: Story = {
   },
 };
 
-export const CompleteButShortDuration: Story = {
+export const CompleteButShortJobDuration: Story = {
   args: {
     company_image_url:
       "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",

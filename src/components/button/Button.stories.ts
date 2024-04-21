@@ -24,19 +24,19 @@ export const Primary: Story = {
   },
 };
 
+export const Secondary: Story = {
+  args: {
+    primary: false,
+    label: "Click me",
+    icon: "plus",
+  },
+};
+
 export const PrimaryBig: Story = {
   args: {
     label: "Click me",
     primary: true,
     size: "big",
-    icon: "plus",
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    primary: false,
-    label: "Click me",
     icon: "plus",
   },
 };

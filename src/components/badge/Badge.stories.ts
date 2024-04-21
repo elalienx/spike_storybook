@@ -15,13 +15,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Stories (variants)
-export const Default: Story = {
-  args: {
-    color: "gray",
-    value: 0,
-  },
-};
-
 export const Red: Story = {
   args: {
     color: "red",
@@ -68,5 +61,12 @@ export const Purple: Story = {
   args: {
     color: "purple",
     value: 7,
+  },
+};
+
+export const Default: Story = {
+  args: {
+    color: "gray",
+    value: 0,
   },
 };
