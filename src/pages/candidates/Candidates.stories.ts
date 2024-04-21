@@ -14,8 +14,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Stories (variants)
-export const Empty: Story = {
+// Stories
+export const Default: Story = {
   args: {},
 };
 
@@ -23,10 +23,9 @@ export const Loading: Story = {
   args: {},
 };
 
-export const Content: Story = {
+export const Error: Story = {
   args: {},
 };
-
-export const Error: Story = {
+export const Empty: Story = {
   args: {},
 };

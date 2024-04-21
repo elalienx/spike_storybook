@@ -35,48 +35,10 @@ const meta: Meta<typeof RowCandidate> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Stories (variants)
-export const Empty: Story = {
+// Stories
+export const Default: Story = {
   args: {
     id: 1,
-    candidate_name: "",
-    candidate_job_title: "",
-    candidate_image_url: "",
-    company_name: "",
-    company_duration_in_months: 0,
-    company_image_url: "",
-    notes: "",
-    relevance: 0,
-    contact_status: 0,
-    contact_date: "",
-    projectId: 1,
-    date_created: "2024-01-31 21:00:30.610279",
-    linked_in_url: "",
-  },
-};
-
-export const Minimal: Story = {
-  args: {
-    id: 2,
-    candidate_name: "Eduardo Alvarez",
-    candidate_job_title: "",
-    candidate_image_url: "",
-    company_name: "Novare Potential",
-    company_duration_in_months: 0,
-    company_image_url: "",
-    notes: "",
-    relevance: 1,
-    contact_status: 0,
-    contact_date: "",
-    projectId: 1,
-    date_created: "2024-01-31 21:00:30.610279",
-    linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
-  },
-};
-
-export const Full: Story = {
-  args: {
-    id: 3,
     candidate_name: "Eduardo Alvarez Nowak",
     candidate_job_title: "Tech Education Lead",
     candidate_image_url:
@@ -92,5 +54,24 @@ export const Full: Story = {
     projectId: 1,
     date_created: "2024-01-31 21:00:30.610279",
     linked_in_url: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
+  },
+};
+
+export const Empty: Story = {
+  args: {
+    id: 2,
+    candidate_name: "",
+    candidate_job_title: "",
+    candidate_image_url: "",
+    company_name: "",
+    company_duration_in_months: 0,
+    company_image_url: "",
+    notes: "",
+    relevance: 0,
+    contact_status: 0,
+    contact_date: "",
+    projectId: 1,
+    date_created: "2024-01-31 21:00:30.610279",
+    linked_in_url: "",
   },
 };

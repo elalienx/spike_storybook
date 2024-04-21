@@ -17,7 +17,7 @@ interface Props {
   profile?: "candidate" | "company";
 }
 
-/** Provides a square image with placeholder */
+/** Provides a square image with a placeholder. */
 export default function ImageSquare(item: Props) {
   const { src, className, alt, profile = "company" } = item;
 

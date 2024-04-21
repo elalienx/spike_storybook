@@ -4,7 +4,7 @@ import ImageSquare from "components/image-square/ImageSquare";
 import "./card.css";
 import "./card-new.css";
 
-/** UI component to create a new assignment. It has not modificable properties. */
+/** UI element to create a new assignment. Does not have modificable properties. */
 export default function CardNew() {
   return (
     <article className="card card-new">

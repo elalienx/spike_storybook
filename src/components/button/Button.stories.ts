@@ -15,7 +15,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Stories (variants)
+// Stories
 export const Primary: Story = {
   args: {
     label: "Click me",

@@ -17,16 +17,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Stories (variants)
+// Stories
 export const Default: Story = {
-  args: {
-    candidate_image_url: "",
-    candidate_name: "George Domingez",
-    candidate_job_title: "UX Lead",
-  },
-};
-
-export const Complete: Story = {
   args: {
     candidate_image_url:
       "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
@@ -35,11 +27,19 @@ export const Complete: Story = {
   },
 };
 
-export const CompleteButLongJobTitle: Story = {
+export const JobTitleTrimmed: Story = {
   args: {
     candidate_image_url:
       "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
     candidate_name: "Eduardo Alvarez",
     candidate_job_title: "Senior Frontend Developer",
+  },
+};
+
+export const Empty: Story = {
+  args: {
+    candidate_image_url: "",
+    candidate_name: "George Domingez",
+    candidate_job_title: "UX Lead",
   },
 };

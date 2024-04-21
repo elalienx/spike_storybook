@@ -17,7 +17,7 @@ interface Props {
   subtitle?: string;
 }
 
-/** Indicates progress or status in a sequence. */
+/** Include text on a badge to describe the progression or status within a sequence. */
 export default function ItemBadge(item: Props) {
   const { value, color, title, subtitle } = item;
 
