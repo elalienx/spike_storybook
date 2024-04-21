@@ -3,13 +3,13 @@ import ImageSquare from "components/image-square/ImageSquare";
 import "./item-candidate.css";
 
 interface Props {
-  /** Full name of the candidate */
+  /** Full name of the candidate. */
   candidate_image_url: string;
 
-  /** The name of the candidate */
+  /** The name of the candidate. */
   candidate_name: string;
 
-  /** The job title of the candidate */
+  /** The job title of the candidate. */
   candidate_job_title: string;
 }
 

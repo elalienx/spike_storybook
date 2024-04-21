@@ -4,13 +4,13 @@ import ImageSquare from "components/image-square/ImageSquare";
 import "./navigation-bar.css";
 
 interface Props {
-  /** The name of the current assignment */
+  /** The name of the current assignment. */
   assignment_name: string;
 
-  /** The company logo */
+  /** The company logo. */
   company_image_url: string;
 
-  /** How many candidates have responded to us after initial contact? A value less than 0 indicates we haven't started to contact anyone yet */
+  /** How many candidates have responded to us after initial contact? A value of -1 indicates we haven't started to contact anyone yet. */
   response_rate: number;
 }
 

@@ -5,16 +5,16 @@ import { useRef } from "react";
 import "./input.css";
 
 interface Props {
-  /** The name of this field */
+  /** The name of this field. */
   label: string;
 
-  /** The example text to display when the field is empty */
+  /** The example text to display when the field is empty. */
   placeholder: string;
 
-  /** Determines if is an obligatory field */
+  /** Determines if is an obligatory field. */
   required: boolean;
 
-  /** The text the user writes in the field */
+  /** The text the user writes in the field. */
   defaultValue: string;
 }
 

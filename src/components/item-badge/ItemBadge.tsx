@@ -4,16 +4,16 @@ import Color from "types/Color";
 import "./item-badge.css";
 
 interface Props {
-  /** What color to use for the Badge */
+  /** What color to use for the Badge. */
   color: Color;
 
-  /**  Badge contents */
+  /**  Badge contents. */
   value: number;
 
-  /** The first line of text */
+  /** The first line of text. */
   title: string;
 
-  /** The second line of text. This one is optional */
+  /** The second line of text. This one is optional. */
   subtitle?: string;
 }
 

@@ -3,13 +3,13 @@ import ImageSquare from "components/image-square/ImageSquare";
 import "./header-candidate.css";
 
 interface Props {
-  /** The unique indentifier of the candidate */
+  /** The unique indentifier of the candidate. */
   id: number;
 
-  /** The name of the candidate */
+  /** The name of the candidate. */
   candidate_image_url: string;
 
-  /** The name of the company */
+  /** The name of the company. */
   company_image_url: string;
 }
 

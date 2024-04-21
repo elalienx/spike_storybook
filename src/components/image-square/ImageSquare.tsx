@@ -4,16 +4,16 @@ import Candidate from "assets/placeholder-candidate.png";
 import "./image-square.css";
 
 interface Props {
-  /** The source of the image */
+  /** The source of the image. */
   src: string;
 
-  /** Optional CSS classes for styling */
+  /** Optional CSS classes for styling. */
   className?: string;
 
-  /** The description for accebility readers */
+  /** The description for accebility readers. */
   alt?: string;
 
-  /** The type of placeholder to use. Defaults to company as its the most used */
+  /** The type of placeholder to use. Defaults to company as its the most used. */
   profile?: "candidate" | "company";
 }
 

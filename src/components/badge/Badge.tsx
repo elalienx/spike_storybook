@@ -3,10 +3,10 @@ import Color from "types/Color";
 import "./badge.css";
 
 interface Props {
-  /** What color to use */
+  /** What color to use. */
   color: Color;
 
-  /**  Badge contents */
+  /**  Badge contents. */
   value: number;
 }
 
