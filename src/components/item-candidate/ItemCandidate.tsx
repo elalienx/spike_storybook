@@ -1,5 +1,5 @@
 // Project files
-import ImageSquare from "../image-square/ImageSquare";
+import ImageSquare from "components/image-square/ImageSquare";
 import "./item-candidate.css";
 
 interface Props {

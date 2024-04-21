@@ -1,13 +1,13 @@
 // Project files
-import Card from "../../components/card/Card";
-import Loader from "../../components/loader/Loader";
-import Assignment from "../../types/Assignment";
-import Status from "../../types/Status";
+import Card from "components/card/Card";
+import Loader from "components/loader/Loader";
+import Assignment from "types/Assignment";
+import Status from "types/Status";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import "./assignments.css";
 import StateEmpty from "./StateEmpty";
 import StateError from "./StateError";
+import "./assignments.css";
 
 interface Props {
   /** The assignments comming from the database. */

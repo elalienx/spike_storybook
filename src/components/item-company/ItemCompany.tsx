@@ -1,6 +1,6 @@
 // Project files
-import monthsToYears from "../../scripts/monthsToYears";
-import ImageSquare from "../image-square/ImageSquare";
+import ImageSquare from "components/image-square/ImageSquare";
+import monthsToYears from "scripts/monthsToYears";
 import "./item-company.css";
 
 interface Props {

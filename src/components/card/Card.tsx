@@ -1,7 +1,7 @@
 // Project files
-import Assignment from "../../types/Assignment";
-import Button from "../button/Button";
-import ImageSquare from "../image-square/ImageSquare";
+import Button from "components/button/Button";
+import ImageSquare from "components/image-square/ImageSquare";
+import Assignment from "types/Assignment";
 import "./card.css";
 
 /** UI component to visualize an assignment. */

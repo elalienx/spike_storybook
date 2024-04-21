@@ -1,5 +1,5 @@
 // Project files
-import Status from "../../types/Status";
+import Status from "types/Status";
 import "./candidates.css";
 
 interface Props {

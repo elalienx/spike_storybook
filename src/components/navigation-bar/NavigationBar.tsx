@@ -1,6 +1,6 @@
 // Project files
-import Logo from "../../assets/logo-scoutr.svg";
-import ImageSquare from "../image-square/ImageSquare";
+import Logo from "assets/logo-scoutr.svg";
+import ImageSquare from "components/image-square/ImageSquare";
 import "./navigation-bar.css";
 
 interface Props {
