@@ -1,13 +1,13 @@
 // Project files
 import Card from "../../components/card/Card";
 import Loader from "../../components/loader/Loader";
-import StateAssignments from "../../components/state-assignments/StateAssignments";
 import Assignment from "../../types/Assignment";
 import Status from "../../types/Status";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import "./assignments.css";
-import StateData from "../../data/page-states.json"
+import StateEmpty from "./StateEmpty";
+import StateError from "./StateError";
 
 interface Props {
   data: any;
@@ -28,9 +28,9 @@ export default function Assignments(item: Props) {
       <Hero />
       <section className="section">
         {status === "loading" && <Loader />}
-        {status === "empty" && <StateAssignments {}/>}
+        {status === "empty" && <StateEmpty />}
+        {status === "error" && <StateError />}
         {status === "content" && <div className="columns">{Cards}</div>}
-        {status === "error" && <p>Error ❌</p>}
       </section>
       <Footer />
     </div>

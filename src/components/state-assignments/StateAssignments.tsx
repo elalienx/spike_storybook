@@ -1,28 +1,9 @@
-// Nodem modules
-import { IconName } from "@fortawesome/fontawesome-svg-core";
-
 // Project files
 import Button from "../button/Button";
+import PageState from "../../types/PageState";
 import "./state-assignments.css";
 
-interface Props {
-  /** The URL of the image to illustrate the state */
-  image_url: string;
-
-  /** The image alt description for screen readers */
-  image_alt: string;
-
-  /** An array containing the paragrapgs describing the state */
-  messages: string[];
-
-  /** The label of the action available to the state */
-  button_label: string;
-
-  /** The icon for button */
-  button_icon: IconName;
-}
-
-export default function StateAssignments(item: Props) {
+export default function StateAssignments(item: PageState) {
   const { image_url, image_alt, messages, button_label, button_icon } = item;
 
   // Components

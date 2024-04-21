@@ -3,7 +3,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
 import Assignments from "./Assignments";
-import Assignment from "../../types/Assignment";
 
 const meta = {
   title: "Pages/Assignments",
@@ -16,20 +15,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // Stories (variants)
-export const Empty: Story = {
-  args: {
-    data: [],
-    status: "empty",
-  },
-};
-
-export const Loading: Story = {
-  args: {
-    data: [],
-    status: "loading",
-  },
-};
-
 export const Content: Story = {
   args: {
     data: [
@@ -59,6 +44,20 @@ export const Content: Story = {
       },
     ],
     status: "content",
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    data: [],
+    status: "loading",
+  },
+};
+
+export const Empty: Story = {
+  args: {
+    data: [],
+    status: "empty",
   },
 };
 
