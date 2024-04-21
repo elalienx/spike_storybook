@@ -1,6 +1,6 @@
 // Project files
-import Company from "../../assets/placeholder-company.png";
-import Candidate from "../../assets/placeholder-candidate.png";
+import Company from "assets/placeholder-company.png";
+import Candidate from "assets/placeholder-candidate.png";
 import "./image-square.css";
 
 interface Props {

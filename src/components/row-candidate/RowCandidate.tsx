@@ -1,9 +1,9 @@
 // Project files
-import Candidate from "../../types/Candidate";
-import HeaderCandidate from "../header-candidate/HeaderCandidate";
-import ItemBadge from "../item-badge/ItemBadge";
-import ItemCandidate from "../item-candidate/ItemCandidate";
-import ItemCompany from "../item-company/ItemCompany";
+import HeaderCandidate from "components/header-candidate/HeaderCandidate";
+import ItemBadge from "components/item-badge/ItemBadge";
+import ItemCandidate from "components/item-candidate/ItemCandidate";
+import ItemCompany from "components/item-company/ItemCompany";
+import Candidate from "types/Candidate";
 import { data } from "./helpers/data";
 import "./row-candidate.css";
 

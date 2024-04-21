@@ -1,6 +1,6 @@
 // Project files
-import Color from "../../types/Color";
-import Badge from "../badge/Badge";
+import Badge from "components/badge/Badge";
+import Color from "types/Color";
 import "./item-badge.css";
 
 interface Props {

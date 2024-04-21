@@ -1,6 +1,6 @@
 // Project files
-import ImageSquare from "../image-square/ImageSquare";
-import Button from "../button/Button";
+import Button from "components/button/Button";
+import ImageSquare from "components/image-square/ImageSquare";
 import "./card.css";
 import "./card-new.css";
 

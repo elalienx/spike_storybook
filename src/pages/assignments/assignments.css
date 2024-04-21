@@ -1,15 +1,21 @@
 #assignments {
-  display: flex;
-  flex-direction: column;
-  width: min(960px, 100% - 48px); /* 48px is 24px per side */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-big);
+  width: min(960px, 100% - 24px - 24px); /* 24px per sidee */
   min-height: 100vh;
   margin-inline: auto;
-  padding-top: 24px;
-  padding-bottom: var(--space-big);
+  padding: 24px 0;
 
-  /* CONTAINER */
-  .container {
-    flex: 1;
+  .section.loading {
+    display: grid;
+    place-items: center;
+  }
+
+  .section.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-medium);
   }
 }
 
