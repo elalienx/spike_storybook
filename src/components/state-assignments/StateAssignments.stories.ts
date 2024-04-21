@@ -3,8 +3,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
 import StateAssignments from "./StateAssignments";
-import ImageStateError from "../../assets/state-error.png";
-import ImageStateEmptyAssignments from "../../assets/state-empty-assignments.png";
+import Data from "../../data/page-states.json";
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 const meta = {
   title: "States/Assignments",
@@ -20,26 +20,20 @@ type Story = StoryObj<typeof meta>;
 // Stories (variants)
 export const Empty: Story = {
   args: {
-    image_url: ImageStateEmptyAssignments,
-    image_alt: "A male a female construction engineers checking a blueprint",
-    messages: [
-      "Seems like you haven’t created any assigments yet.",
-      "Click the button below to start!",
-    ],
-    button_label: "New assigment",
-    button_icon: "plus",
+    image_url: Data.assignments.empty.image_url,
+    image_alt: Data.assignments.empty.image_alt,
+    messages: Data.assignments.empty.messages,
+    button_label: Data.assignments.empty.button_label,
+    button_icon: Data.assignments.empty.button_icon as IconName,
   },
 };
 
 export const Error: Story = {
   args: {
-    image_url: ImageStateError,
-    image_alt: "A woman holding his hands behind the head looking surprised",
-    messages: [
-      "Oh no! We could not load any assigment.",
-      "Call Martin to fix your WIFI and try again!",
-    ],
-    button_label: "Try again",
-    button_icon: "rotate-right",
+    image_url: Data.assignments.error.image_url,
+    image_alt: Data.assignments.error.image_alt,
+    messages: Data.assignments.error.messages,
+    button_label: Data.assignments.error.button_label,
+    button_icon: Data.assignments.error.button_icon as IconName,
   },
 };

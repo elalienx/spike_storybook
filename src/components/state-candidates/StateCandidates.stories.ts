@@ -3,8 +3,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
 import StateCandidates from "./StateCandidates";
-import ImageStateError from "../../assets/state-error.png";
-import ImageStateEmtpyCandidates from "../../assets/state-empty-candidates.png";
+import Data from "../../data/page-states.json";
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 const meta = {
   title: "States/Candidates",
@@ -20,27 +20,20 @@ type Story = StoryObj<typeof meta>;
 // Stories (variants)
 export const Empty: Story = {
   args: {
-    image_url: ImageStateEmtpyCandidates,
-    image_alt: "A male a female construction engineers checking a blueprint",
-    messages: [
-      "Welcome to the candidates page.",
-      "Click below to get started.",
-    ],
-    button_label: "Add Candidates",
-    button_icon_prefix: "fab",
-    button_icon: "linkedin",
+    image_url: Data.candidates.empty.image_url,
+    image_alt: Data.candidates.empty.image_alt,
+    messages: Data.candidates.empty.messages,
+    button_label: Data.candidates.empty.button_label,
+    button_icon: Data.candidates.empty.button_icon as IconName,
   },
 };
 
 export const Error: Story = {
   args: {
-    image_url: ImageStateError,
-    image_alt: "A woman holding his hands behind the head looking surprised",
-    messages: [
-      "The office WIFI strikes again!",
-      "You know the drill. Call Martin and try again.",
-    ],
-    button_label: "Try again",
-    button_icon: "rotate-right",
+    image_url: Data.candidates.error.image_url,
+    image_alt: Data.candidates.error.image_alt,
+    messages: Data.candidates.error.messages,
+    button_label: Data.candidates.error.button_label,
+    button_icon: Data.candidates.error.button_icon as IconName,
   },
 };
