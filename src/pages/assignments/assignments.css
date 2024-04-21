@@ -7,15 +7,14 @@
   margin-inline: auto;
   padding: 24px 0;
 
+  .section.content {
+    display: grid;
+    gap: var(--space-medium);
+  }
+
   .section.loading {
     display: grid;
     place-items: center;
-  }
-
-  .section.content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-medium);
   }
 }
 
@@ -23,5 +22,18 @@
 @media (min-width: 700px) {
   #assignments {
     padding-top: 64px; /** big space for hero */
+
+    .section.content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  #assignments {
+    .section.content {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
