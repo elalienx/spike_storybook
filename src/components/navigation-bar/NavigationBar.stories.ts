@@ -2,6 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
+import ImageURLs from "stories/image_urls.json";
 import NavigationBar from "./NavigationBar";
 
 const meta = {
@@ -21,8 +22,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     assignment_name: "Data Engineer",
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4D0BAQH3hv1qu8sCrQ/company-logo_200_200/0/1667899788739/folksam_logo?e=1721260800&v=beta&t=-TSMOF4J0uygrJpyHNGmvPFUmSPaDEuj0Q_5jAkPPOk",
+    company_image_url: ImageURLs.company_foklsam,
     response_rate: 37,
   },
 };
@@ -30,8 +30,7 @@ export const Default: Story = {
 export const NoContact: Story = {
   args: {
     assignment_name: "Data Engineer",
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4D0BAQH3hv1qu8sCrQ/company-logo_200_200/0/1667899788739/folksam_logo?e=1721260800&v=beta&t=-TSMOF4J0uygrJpyHNGmvPFUmSPaDEuj0Q_5jAkPPOk",
+    company_image_url: ImageURLs.company_foklsam,
     response_rate: 0,
   },
 };

@@ -6,6 +6,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
+import ImageURLs from "stories/image_urls.json";
 import RowCandidate from "./RowCandidate";
 
 const meta: Meta<typeof RowCandidate> = {
@@ -41,12 +42,10 @@ export const Default: Story = {
     id: 1,
     candidate_name: "Eduardo Alvarez Nowak",
     candidate_job_title: "Tech Education Lead",
-    candidate_image_url:
-      "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
+    candidate_image_url: ImageURLs.candidate_eduardo,
     company_name: "Novare Potential",
     company_duration_in_months: 34,
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
+    company_image_url: ImageURLs.company_novare,
     notes: "Highly qualified, but a bit egocentric...",
     relevance: 5,
     contact_status: 1,

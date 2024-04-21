@@ -2,6 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
+import ImageURLs from "stories/image_urls.json";
 import Card from "./Card";
 
 const meta = {
@@ -25,8 +26,7 @@ export const Default: Story = {
     date_created: "2024-04-15",
     assignment_name: "Data Engineer",
     company_name: "Folksam",
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4D0BAQH3hv1qu8sCrQ/company-logo_200_200/0/1667899788739/folksam_logo?e=1721260800&v=beta&t=-TSMOF4J0uygrJpyHNGmvPFUmSPaDEuj0Q_5jAkPPOk",
+    company_image_url: ImageURLs.company_foklsam,
   },
 };
 

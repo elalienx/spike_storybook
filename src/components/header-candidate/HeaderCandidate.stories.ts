@@ -2,6 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
+import ImageURLs from "stories/image_urls.json";
 import HeaderCandidate from "./HeaderCandidate";
 
 const meta = {
@@ -22,18 +23,15 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     id: 1,
-    candidate_image_url:
-      "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
+    candidate_image_url: ImageURLs.candidate_eduardo,
+    company_image_url: ImageURLs.company_novare,
   },
 };
 
 export const OnlyProfile: Story = {
   args: {
     id: 2,
-    candidate_image_url:
-      "https://media.licdn.com/dms/image/C4E03AQHwKgpnjrXkZA/profile-displayphoto-shrink_400_400/0/1643017689481?e=1718841600&v=beta&t=oXzvwBCY0QRE9ZnWl5CCqyBmDZFS2c_Jk9fDpndKzf8",
+    candidate_image_url: ImageURLs.candidate_eduardo,
     company_image_url: "",
   },
 };
@@ -42,8 +40,7 @@ export const OnlyLogo: Story = {
   args: {
     id: 3,
     candidate_image_url: "",
-    company_image_url:
-      "https://media.licdn.com/dms/image/C4E0BAQHElmOdWZ-xZA/company-logo_100_100/0/1631374829245/novare_potential_logo?e=1721260800&v=beta&t=ZRqH0M228v3G2tsbV5UsqqbmXstjR5_GQ69QLuw0eR8",
+    company_image_url: ImageURLs.company_novare,
   },
 };
 
