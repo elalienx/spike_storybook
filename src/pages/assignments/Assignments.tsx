@@ -8,6 +8,7 @@ import Hero from "./Hero";
 import StateEmpty from "./StateEmpty";
 import StateError from "./StateError";
 import "./assignments.css";
+import CardNew from "components/card-new/CardNew";
 
 interface Props {
   /** The assignments comming from the database. */
@@ -26,6 +27,7 @@ export default function Assignments(item: Props) {
   const Cards = data.map((item: Assignment) => (
     <Card key={item.id} {...item} />
   ));
+  Cards.push(<CardNew key={data.length + 1} />);
 
   return (
     <div id="assignments">

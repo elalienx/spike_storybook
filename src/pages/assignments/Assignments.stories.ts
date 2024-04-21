@@ -40,6 +40,13 @@ export const Default: Story = {
         company_name: "McDonalds",
         company_image_url: ImageURLs.company_mcdonalds,
       },
+      {
+        id: 4,
+        date_created: "2024-02-02 21:00:30.610279",
+        assignment_name: "Pega Lead System Architech",
+        company_name: "Nordea Bank",
+        company_image_url: ImageURLs.company_nordea,
+      },
     ],
     status: "content",
   },

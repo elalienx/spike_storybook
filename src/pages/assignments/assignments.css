@@ -9,6 +9,7 @@
 
   .section.content {
     display: grid;
+    align-content: start; /* to tell the cards to not stretch around the content space*/
     gap: var(--space-medium);
   }
 
