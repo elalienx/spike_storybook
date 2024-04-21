@@ -28,6 +28,6 @@ export const MultiLine: Story = {
     color: "cyan",
     value: 2,
     title: "Scheduled",
-    subtitle: "2024-04-02 21:00:30.610279",
+    subtitle: "APR 12",
   },
 };

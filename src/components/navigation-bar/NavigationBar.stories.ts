@@ -27,7 +27,7 @@ export const Default: Story = {
   },
 };
 
-export const NoContact: Story = {
+export const NoResponses: Story = {
   args: {
     assignment_name: "Data Engineer",
     company_image_url: ImageURLs.company_foklsam,
