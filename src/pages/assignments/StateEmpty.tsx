@@ -2,6 +2,7 @@
 import "../../assets/state-empty-assignments.png";
 import Image from "../../assets/state-empty-assignments.png";
 import Button from "../../components/button/Button";
+import "./state-assignments.css"
 
 export default function StateEmpty() {
   return (
