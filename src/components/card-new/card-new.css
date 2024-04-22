@@ -5,7 +5,9 @@
 
 /* Laptop half width */
 @media (min-width: 700px) {
-  .card.card-new h2 {
-    width: 50%; /* to force 2 line sentence in a short word */
+  .card.card-new {
+    h2 {
+      width: 50%; /* to force 2 line sentence in a short word */
+    }
   }
 }

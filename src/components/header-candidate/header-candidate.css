@@ -1,6 +1,4 @@
 .header-candidate {
-  /* to fix the negative margin of the company picture */
-  /* margin-bottom: var(--space-small); */
   text-align: center;
 }
 

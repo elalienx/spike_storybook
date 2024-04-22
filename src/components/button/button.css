@@ -11,21 +11,21 @@
   .icon {
     margin-right: var(--space-small);
   }
-}
 
-.button:hover {
-  background-color: var(--color-black);
-  color: white;
-  border-color: var(--color-black);
-}
+  &:hover {
+    background-color: var(--color-black);
+    color: white;
+    border-color: var(--color-black);
+  }
 
-.button:active {
-  color: var(--color-gray);
-}
+  &:active {
+    color: var(--color-gray);
+  }
 
-.button:disabled {
-  background-color: white;
-  color: var(--color-gray);
-  border-color: currentColor;
-  cursor: not-allowed;
+  &:disabled {
+    background-color: white;
+    color: var(--color-gray);
+    border-color: currentColor;
+    cursor: not-allowed;
+  }
 }

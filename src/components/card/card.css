@@ -8,23 +8,23 @@
   background-color: white;
   border: solid 0.5px var(--color-border);
   border-radius: var(--border-radius-small);
-}
 
-.card img {
-  --size: 44px;
+  img {
+    --size: 44px;
 
-  width: var(--size);
-  height: var(--size);
-  background-color: var(--color-gray-light);
-  border-radius: var(--border-radius-small);
-}
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color-gray-light);
+    border-radius: var(--border-radius-small);
+  }
 
-.card h2 {
-  margin-bottom: 0;
-}
+  h2 {
+    margin-bottom: 0;
+  }
 
-.card .label {
-  margin-bottom: auto; /* to push the button down */
+  .label {
+    margin-bottom: auto; /* to push the button down */
+  }
 }
 
 /* Laptop half width */
@@ -32,9 +32,9 @@
   .card {
     aspect-ratio: 10 / 11;
     padding-top: var(--space-big);
-  }
 
-  .card h2 {
-    width: 67%;
+    h2 {
+      width: 67%;
+    }
   }
 }
