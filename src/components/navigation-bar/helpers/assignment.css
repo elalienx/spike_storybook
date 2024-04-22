@@ -8,7 +8,7 @@
     max-width: 86px;
   }
 
-  .assignment .company-logo {
+  .assignment .logo {
     --size: 24px;
 
     width: var(--size);
@@ -26,7 +26,7 @@
       max-width: unset; /* reset max width */
     }
 
-    .assignment .company-logo {
+    .assignment .logo {
       --size: 48px;
     }
   }

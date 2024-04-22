@@ -1,6 +1,7 @@
 // Project files
 import Logo from "assets/logo-scoutr.svg";
 import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
+import ResponseRate from "./helpers/ResponseRate";
 import "./helpers/assignment.css";
 import "./helpers/response-rate.css";
 import "./navigation-bar.css";
@@ -20,25 +21,14 @@ interface Props {
 export default function NavigationBar(item: Props) {
   const { assignment_name, company_image_url, response_rate } = item;
 
-  // Components
-  const KeepRightMargin = <div className="response-rate div-to-keep-margin" />;
-  const ResponseRate = (
-    <div className="response-rate">
-      <span className="value">{response_rate}</span>
-      <span className="symbol">%</span>
-      <small className="label">Response rate</small>
-    </div>
-  );
+  // Propertie
+  const alt = "Logo of the company giving the assigment";
 
   return (
     <nav className="navigation-bar">
       {/* Left */}
       <div className="assignment">
-        <ImageThumbnail
-          className="company-logo"
-          src={company_image_url}
-          alt="Company logo"
-        />
+        <ImageThumbnail className="logo" src={company_image_url} alt={alt} />
         <h1 className="title">{assignment_name}</h1>
       </div>
 
@@ -46,7 +36,7 @@ export default function NavigationBar(item: Props) {
       <img className="scoutr-logo" src={Logo} />
 
       {/* Right */}
-      {response_rate < 0 ? KeepRightMargin : ResponseRate}
+      <ResponseRate response_rate={response_rate} />
     </nav>
   );
 }
