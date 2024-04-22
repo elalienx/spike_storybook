@@ -7,10 +7,10 @@
   border-radius: 100px;
   font-size: var(--font-size-normal);
   font-weight: var(--font-weight-bold);
-}
 
-.button .icon {
-  margin-right: var(--space-small);
+  .icon {
+    margin-right: var(--space-small);
+  }
 }
 
 .button:hover {
