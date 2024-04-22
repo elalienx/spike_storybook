@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import CardNew from "./CardNew";
 
 const meta = {
-  title: "Components/Card new",
+  title: "Components/Card New",
   component: CardNew,
   parameters: { layout: "centered" },
   tags: ["autodocs"],

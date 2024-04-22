@@ -23,7 +23,7 @@ export const SingleLine: Story = {
   },
 };
 
-export const MultiLine: Story = {
+export const DoubleLine: Story = {
   args: {
     color: "cyan",
     value: 2,
