@@ -1,6 +1,6 @@
 // Project files
 import Logo from "assets/logo-scoutr.svg";
-import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
+import Assignment from "./helpers/Assignment";
 import ResponseRate from "./helpers/ResponseRate";
 import "./helpers/assignment.css";
 import "./helpers/response-rate.css";
@@ -21,16 +21,13 @@ interface Props {
 export default function NavigationBar(item: Props) {
   const { assignment_name, company_image_url, response_rate } = item;
 
-  // Propertie
-  const alt = "Logo of the company giving the assigment";
-
   return (
     <nav className="navigation-bar">
       {/* Left */}
-      <div className="assignment">
-        <ImageThumbnail className="logo" src={company_image_url} alt={alt} />
-        <h1 className="title">{assignment_name}</h1>
-      </div>
+      <Assignment
+        assignment_name={assignment_name}
+        company_image_url={company_image_url}
+      />
 
       {/* Midle */}
       <img className="scoutr-logo" src={Logo} />
