@@ -1,7 +1,7 @@
 // Project files
 import Company from "assets/placeholder-company.png";
 import Candidate from "assets/placeholder-candidate.png";
-import "./image-square.css";
+import "./image-thumbnail.css";
 
 interface Props {
   /** The source of the image. */
@@ -25,5 +25,7 @@ export default function ImageThumbnail(item: Props) {
   const Placeholder = profile === "company" ? Company : Candidate;
   const Source = src || Placeholder;
 
-  return <img src={Source} className={`image-square ${className}`} alt={alt} />;
+  return (
+    <img src={Source} className={`image-thumbnail ${className}`} alt={alt} />
+  );
 }

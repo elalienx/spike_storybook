@@ -6,7 +6,7 @@ import ImageURLs from "stories/image_urls.json";
 import ImageThumbnail from "./ImageThumbnail";
 
 const meta = {
-  title: "Components/Image Square",
+  title: "Components/Image Thumbnail",
   component: ImageThumbnail,
   parameters: { layout: "centered" },
   args: { profile: "company" },
