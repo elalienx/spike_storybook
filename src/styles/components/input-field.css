@@ -1,9 +1,8 @@
-.input {
+.input-field {
   width: 100%; /* to protect from flex-shrink */
 }
 
-.input input,
-.input textarea {
+.input-field .input {
   display: block;
   width: 100%; /* inputs are weird, they don't take full width even with display block */
   padding: var(--space-small);
@@ -16,7 +15,7 @@
   font-weight: var(--font-weight-normal);
 }
 
-.input .label {
+.input-field .label {
   display: inline-block;
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-small);

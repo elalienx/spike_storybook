@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 // Project files
-import "styles/component/input.css";
+import "styles/components/input-field.css";
 
 interface Props {
   /** The name of this field. */
