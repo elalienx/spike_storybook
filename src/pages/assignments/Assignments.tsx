@@ -3,10 +3,10 @@ import Card from "components/card/Card";
 import Loader from "components/loader/Loader";
 import Assignment from "types/Assignment";
 import Status from "types/Status";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import StateEmpty from "./StateEmpty";
-import StateError from "./StateError";
+import Footer from "./helpers/Footer";
+import Hero from "./helpers/Hero";
+import StateEmpty from "./helpers/StateEmpty";
+import StateError from "./helpers/StateError";
 import "./assignments.css";
 import CardNew from "components/card-new/CardNew";
 

@@ -6,17 +6,14 @@
 }
 
 /* Layout */
-.navigation-bar .left,
-.navigation-bar .right {
-  flex: 1; /* Trick to force logo be in the center */
-}
-
 .navigation-bar .left {
+  flex: 1; /* Trick to force logo be in the center */
   display: flex;
   align-items: center;
 }
 
 .navigation-bar .right {
+  flex: 1; /* Trick to force logo be in the center */
   text-align: right;
 }
 
@@ -41,19 +38,6 @@
   height: var(--size);
 }
 
-.navigation-bar .symbol {
-  vertical-align: super; /* to make text superscript (x^2) */
-  font-size: 9.5px;
-}
-
-.navigation-bar .value {
-  font-weight: var(--font-weight-bold);
-}
-
-.navigation-bar .label {
-  font-size: 8px;
-}
-
 /* Bigger than laptop half width */
 @media (min-width: 700px) {
   .navigation-bar .title {
@@ -67,17 +51,5 @@
 
   .navigation-bar .logo {
     --size: 24px;
-  }
-
-  .navigation-bar .symbol {
-    font-size: 18px;
-  }
-
-  .navigation-bar .value {
-    font-size: 32px;
-  }
-
-  .navigation-bar .label {
-    font-size: var(--font-size-small);
   }
 }
