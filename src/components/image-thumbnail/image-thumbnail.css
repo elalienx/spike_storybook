@@ -1,4 +1,4 @@
-.image-square {
+.image-thumbnail {
   --size: 48px;
 
   width: var(--size);

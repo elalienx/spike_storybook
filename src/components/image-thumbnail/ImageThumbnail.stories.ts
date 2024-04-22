@@ -3,16 +3,16 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Project files
 import ImageURLs from "stories/image_urls.json";
-import ImageSquare from "./ImageSquare";
+import ImageThumbnail from "./ImageThumbnail";
 
 const meta = {
   title: "Components/Image Square",
-  component: ImageSquare,
+  component: ImageThumbnail,
   parameters: { layout: "centered" },
   args: { profile: "company" },
   argTypes: { src: { control: { type: "file", accept: ".jpg, .png" } } },
   tags: ["autodocs"],
-} satisfies Meta<typeof ImageSquare>;
+} satisfies Meta<typeof ImageThumbnail>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

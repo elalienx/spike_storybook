@@ -1,6 +1,6 @@
 // Project files
 import Button from "components/button/Button";
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import Assignment from "types/Assignment";
 import "./card.css";
 
@@ -10,7 +10,7 @@ export default function Card(item: Assignment) {
 
   return (
     <article className="card">
-      <ImageSquare src={company_image_url} alt="The company logo" />
+      <ImageThumbnail src={company_image_url} alt="The company logo" />
       <h2>{assignment_name}</h2>
       <small className="label">{company_name}</small>
       <Button label={"Open"} primary={false} icon="folder-open" />

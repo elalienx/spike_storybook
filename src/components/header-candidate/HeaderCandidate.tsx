@@ -1,5 +1,5 @@
 // Project files
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import "./header-candidate.css";
 
 interface Props {
@@ -19,13 +19,13 @@ export default function HeaderCandidate(item: Props) {
 
   return (
     <header className="header-candidate">
-      <ImageSquare
+      <ImageThumbnail
         src={candidate_image_url}
         className="candidate-image"
         alt="Candidate profile picture"
         profile="candidate"
       />
-      <ImageSquare
+      <ImageThumbnail
         src={company_image_url}
         className="company-image"
         alt="Company logo"

@@ -1,5 +1,5 @@
 // Project files
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import monthsToYears from "scripts/monthsToYears";
 import "./item-company.css";
 
@@ -25,7 +25,7 @@ export default function ItemCompany(item: Props) {
 
   return (
     <div className="item-company">
-      <ImageSquare src={company_image_url} alt="The company logo" />
+      <ImageThumbnail src={company_image_url} alt="The company logo" />
       <div className="content">
         {company_name}
         <small className={`label ${shortDuration}`}>{durationInyears}</small>

@@ -1,5 +1,5 @@
 // Project files
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import "./item-candidate.css";
 
 interface Props {
@@ -24,7 +24,7 @@ export default function ItemCandidate(item: Props) {
 
   return (
     <div className="item-candidate">
-      <ImageSquare src={candidate_image_url} profile="candidate" />
+      <ImageThumbnail src={candidate_image_url} profile="candidate" />
       <div className="content">
         {Name}
         <small className="label">{JobTitle}</small>

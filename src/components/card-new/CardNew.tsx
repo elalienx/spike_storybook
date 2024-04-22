@@ -1,6 +1,6 @@
 // Project files
 import Button from "components/button/Button";
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import "./card.css";
 import "./card-new.css";
 
@@ -8,7 +8,7 @@ import "./card-new.css";
 export default function CardNew() {
   return (
     <article className="card card-new">
-      <ImageSquare src={""} alt="A generic building" />
+      <ImageThumbnail src={""} alt="A generic building" />
       <h2>Role name</h2>
       <small className="label">Company name</small>
       <Button label={"New assignment"} primary={true} icon="plus" />

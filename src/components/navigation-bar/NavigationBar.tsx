@@ -1,6 +1,6 @@
 // Project files
 import Logo from "assets/logo-scoutr.svg";
-import ImageSquare from "components/image-square/ImageSquare";
+import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
 import "./navigation-bar.css";
 
 interface Props {
@@ -32,7 +32,7 @@ export default function NavigationBar(item: Props) {
     <nav className="navigation-bar">
       {/* Left */}
       <div className="left assignment">
-        <ImageSquare
+        <ImageThumbnail
           className="company-logo"
           src={company_image_url}
           alt="Company logo"
