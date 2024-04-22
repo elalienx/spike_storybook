@@ -1,4 +1,8 @@
 .navigation-bar {
+  .response-rate {
+    text-align: right;
+  }
+
   .response-rate .symbol {
     vertical-align: super; /* to make text superscript (x^2) */
     font-size: 9.5px;

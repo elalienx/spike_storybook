@@ -1,4 +1,8 @@
 .navigation-bar {
+  .assignment {
+    display: flex;
+    align-items: center;
+  }
   .assignment .title {
     font-size: var(--font-size-normal);
     max-width: 86px;

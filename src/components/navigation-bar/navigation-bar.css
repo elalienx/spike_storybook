@@ -5,18 +5,12 @@
   background-color: white;
 }
 
-.navigation-bar .left {
+.navigation-bar .assignment,
+.navigation-bar .response-rate {
   flex: 1; /* Trick to force logo be in the center */
-  display: flex;
-  align-items: center;
 }
 
-.navigation-bar .right {
-  flex: 1; /* Trick to force logo be in the center */
-  text-align: right;
-}
-
-.navigation-bar .logo {
+.navigation-bar .scoutr-logo {
   --size: 15px;
 
   height: var(--size);
@@ -24,7 +18,7 @@
 
 /* Bigger than laptop half width */
 @media (min-width: 700px) {
-  .navigation-bar .logo {
+  .navigation-bar .scoutr-logo {
     --size: 24px;
   }
 }
