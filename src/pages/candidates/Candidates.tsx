@@ -15,6 +15,7 @@ export default function Candidates(item: Props) {
   return (
     <div id="assignments">
       <h1>Candidates</h1>
+      <p>⚠️ Work in progress...</p>
     </div>
   );
 }
