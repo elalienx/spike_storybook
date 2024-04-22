@@ -1,8 +1,9 @@
 // Project files
 import Logo from "assets/logo-scoutr.svg";
 import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
+import "./helpers/assignment.css";
+import "./helpers/response-rate.css";
 import "./navigation-bar.css";
-import "./response-rate.css";
 
 interface Props {
   /** The name of the current assignment. */

@@ -1,0 +1,29 @@
+.navigation-bar {
+  .assignment .title {
+    font-size: var(--font-size-normal);
+    max-width: 86px;
+  }
+
+  .assignment .company-logo {
+    --size: 24px;
+
+    width: var(--size);
+    height: var(--size);
+    object-fit: contain;
+    margin-right: var(--space-small);
+  }
+}
+
+/* Bigger than laptop half width */
+@media (min-width: 700px) {
+  .navigation-bar {
+    .assignment .title {
+      font-size: 32px;
+      max-width: unset; /* reset max width */
+    }
+
+    .assignment .company-logo {
+      --size: 48px;
+    }
+  }
+}
