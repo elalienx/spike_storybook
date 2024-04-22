@@ -4,7 +4,7 @@ import { IconPrefix, IconName } from "@fortawesome/fontawesome-svg-core";
 
 // Project  files
 import "./button.css";
-import "./button-variants.css";
+import "./variants.css";
 
 interface Props {
   /** Button contents. */

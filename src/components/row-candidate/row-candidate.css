@@ -25,19 +25,6 @@
     display: unset;
   }
 
-  /* Design */
-  .row-candidate .id {
-    text-align: center;
-  }
-
-  .row-candidate .candidate img {
-    --size: 44px;
-  }
-
-  .row-candidate .company img {
-    --size: 24px;
-  }
-
   /* Column widths */
   .row-candidate .column-small {
     width: 6.25%;
@@ -49,5 +36,18 @@
 
   .row-candidate .column-big {
     width: 23.75%;
+  }
+
+  /* Design */
+  .row-candidate .id {
+    text-align: center;
+  }
+
+  .row-candidate .candidate img {
+    --size: 44px;
+  }
+
+  .row-candidate .company img {
+    --size: 24px;
   }
 }
