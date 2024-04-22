@@ -59,7 +59,7 @@ export const Default: Story = {
 export const Empty: Story = {
   args: {
     id: 2,
-    candidate_name: "",
+    candidate_name: "Eduardo Alvarez Nowak",
     candidate_job_title: "",
     candidate_image_url: "",
     company_name: "",
