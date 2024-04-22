@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 // Project files
-import "./input.css";
+import "styles/component/input.css";
 
 interface Props {
   /** The name of this field. */
@@ -26,9 +26,10 @@ export default function InputText(item: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <label className="input">
+    <label className="input-field">
       <span className="label">{label}</span>
       <input
+        className="input"
         type="text"
         placeholder={placeholder}
         required={required}

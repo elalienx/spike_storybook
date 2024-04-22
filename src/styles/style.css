@@ -1,7 +1,4 @@
-/* Base */
 @import url("./base//variables.css");
 @import url("./base/typography.css");
 @import url("./base/layout.css");
-
-/* Components */
-@import url("./components/table.css");
+@import url("./base/table.css");
