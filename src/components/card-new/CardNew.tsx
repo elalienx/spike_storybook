@@ -1,7 +1,7 @@
 // Project files
 import Button from "components/button/Button";
 import ImageThumbnail from "components/image-thumbnail/ImageThumbnail";
-import "./card.css";
+import "components/card/card.css";
 import "./card-new.css";
 
 /** UI element to create a new assignment. Does not have modificable properties. */
