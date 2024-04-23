@@ -11,7 +11,7 @@ export default function Card(item: Assignment) {
   return (
     <article className="card">
       <ImageThumbnail src={company_image_url} alt="The company logo" />
-      <h2>{assignment_name}</h2>
+      <h2 className="trim-text">{assignment_name}</h2>
       <small className="label">{company_name}</small>
       <Button label={"Open"} primary={false} icon="folder-open" />
     </article>

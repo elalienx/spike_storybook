@@ -20,6 +20,7 @@
 
   h2 {
     margin-bottom: 0;
+    -webkit-line-clamp: 3; /** to override the lines to trim */
   }
 
   .label {
