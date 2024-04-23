@@ -8,6 +8,10 @@
   .company img {
     display: none; /* because we use a separate component to show them in a better way */
   }
+
+  .notes small.trim-text {
+    -webkit-line-clamp: 3; /** Overides the default 1 line trim */
+  }
 }
 
 /* Laptop half screen */
@@ -38,10 +42,6 @@
 
     .company img {
       --size: 24px;
-    }
-
-    .notes .trim-text {
-      -webkit-line-clamp: 3; /** Overides the default 1 line trim */
     }
 
     /* Column widths */
