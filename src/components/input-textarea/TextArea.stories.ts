@@ -17,8 +17,8 @@ type Story = StoryObj<typeof meta>;
 // Stories
 export const Default: Story = {
   args: {
-    label: "Name",
-    placeholder: "Eduardo Alvarez",
+    label: "Links",
+    placeholder: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     required: true,
     defaultValue:
       "https://www.linkedin.com/in/susanna-vaara-0b33b03a/\nhttps://www.linkedin.com/in/farzad-golchin-1926461b/",
@@ -27,7 +27,7 @@ export const Default: Story = {
 
 export const Empty: Story = {
   args: {
-    label: "Name",
+    label: "Links",
     placeholder: "https://www.linkedin.com/in/eduardo-alvarez-nowak/",
     required: true,
     defaultValue: "",
