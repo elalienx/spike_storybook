@@ -13,6 +13,23 @@
 /* Laptop half screen */
 @media (min-width: 700px) {
   .row-candidate {
+    /* Debug */
+    .candidate .title {
+      background-color: pink;
+    }
+    .candidate .label {
+      background-color: lightgreen;
+    }
+    .company .title {
+      background-color: aliceblue;
+    }
+    .company .label {
+      background-color: lightyellow;
+    }
+    .notes {
+      background-color: lavender;
+    }
+
     /* Layout */
     .header-candidate {
       display: none;

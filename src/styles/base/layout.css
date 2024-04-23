@@ -16,6 +16,14 @@ image {
   height: auto;
 }
 
+/* Utilities */
 ul.no-bullets {
   padding: 0;
+}
+
+.trim-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

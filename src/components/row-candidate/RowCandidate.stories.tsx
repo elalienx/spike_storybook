@@ -40,13 +40,14 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     id: 1,
-    candidate_name: "Eduardo Alvarez Nowak",
-    candidate_job_title: "Tech Education Lead",
+    candidate_name: "Eduardo Xavier Alvarez Nowak",
+    candidate_job_title: "Tech Lead specializing in frontend",
     candidate_image_url: ImageURLs.candidate_eduardo,
-    company_name: "Novare Potential",
+    company_name: "Novare Potential part of Human Capital AB",
     company_duration_in_months: 34,
     company_image_url: ImageURLs.company_novare,
-    notes: "Highly qualified, but a bit egocentric...",
+    notes:
+      "Highly qualified, likes to help people and stays up to date with the latest frontend development tools. Also likes graphic design and UI/UX.",
     relevance: 5,
     contact_status: 1,
     contact_date: "2024-04-02 21:00:30.610279",
