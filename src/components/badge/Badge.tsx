@@ -12,6 +12,6 @@ interface Props {
 }
 
 /** Indicates progress or status in a sequence. */
-export default function Badge({ color = "gray", value = 0 }: Props) {
+export default function Badge({ color, value }: Props) {
   return <div className={`badge ${color}`}>{value}</div>;
 }
