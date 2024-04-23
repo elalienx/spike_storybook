@@ -6,9 +6,6 @@ interface Props {
 export default function ResponseRate(item: Props) {
   const { response_rate } = item;
 
-  // safeguard return empty div to keep spacing
-  if (response_rate < 0) return <div className="response-rate" />;
-
   return (
     <div className="response-rate">
       <span className="value">{response_rate}</span>

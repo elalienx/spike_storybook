@@ -19,7 +19,7 @@ export default function Assignment(item: Props) {
         src={company_image_url}
         alt="Logo of the company giving the assigment"
       />
-      <h1 className="title">{assignment_name}</h1>
+      <h1 className="title trim-text">{assignment_name}</h1>
     </div>
   );
 }

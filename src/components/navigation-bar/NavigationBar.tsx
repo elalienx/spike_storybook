@@ -33,7 +33,7 @@ export default function NavigationBar(item: Props) {
       <img className="scoutr-logo" src={Logo} />
 
       {/* Right */}
-      <ResponseRate response_rate={response_rate} />
+      {response_rate >= 0 && <ResponseRate response_rate={response_rate} />}
     </nav>
   );
 }
