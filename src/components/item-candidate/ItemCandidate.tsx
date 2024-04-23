@@ -17,17 +17,12 @@ interface Props {
 export default function ItemCandidate(item: Props) {
   const { candidate_image_url, candidate_name, candidate_job_title } = item;
 
-  // Properties
-  const CharacterLimit = 20;
-  const Name = candidate_name.slice(0, CharacterLimit);
-  const JobTitle = candidate_job_title.slice(0, CharacterLimit);
-
   return (
     <div className="item-candidate">
       <ImageThumbnail src={candidate_image_url} profile="candidate" />
       <div className="content">
-        {Name}
-        <small className="label">{JobTitle}</small>
+        <span className="title trim-text">{candidate_name}</span>
+        <small className="label trim-text">{candidate_job_title}</small>
       </div>
     </div>
   );

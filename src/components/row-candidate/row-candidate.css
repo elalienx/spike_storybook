@@ -40,6 +40,10 @@
       --size: 24px;
     }
 
+    .notes .trim-text {
+      -webkit-line-clamp: 3; /** Overides the default 1 line trim */
+    }
+
     /* Column widths */
     .column-small {
       width: 6.25%;

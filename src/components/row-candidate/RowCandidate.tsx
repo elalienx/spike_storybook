@@ -25,7 +25,7 @@ export default function RowCandidate(item: Candidate) {
         <ItemCompany {...company} />
       </td>
       <td className="notes column-big" data-label="Notes">
-        <small>{item.notes}</small>
+        <small className="trim-text">{item.notes}</small>
       </td>
       <td className="relevance column-medium" data-label="Relevance">
         {item.relevance ? <ItemBadge {...relevance} /> : null}
