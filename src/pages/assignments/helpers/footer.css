@@ -1,6 +1,3 @@
-#assignments {
-  .footer {
-    flex-shrink: 0;
-    color: var(--color-gray);
-  }
+#assignments .footer {
+  color: var(--color-gray);
 }

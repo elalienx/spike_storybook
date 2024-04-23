@@ -9,6 +9,7 @@
     display: none; /* because we use a separate component to show them in a better way */
   }
 
+  /* Design */
   .notes small.trim-text {
     -webkit-line-clamp: 3; /** Overides the default 1 line trim */
   }

@@ -4,12 +4,10 @@
   align-items: center;
   gap: var(--space-medium);
 
-  /* Layout */
   .content {
     text-align: center;
   }
 
-  /* Design */
   img {
     width: 50%;
   }
@@ -20,12 +18,10 @@
   .state-assignments {
     flex-direction: row;
 
-    /* Layout */
     .content {
       text-align: left;
     }
 
-    /* Design */
     img {
       width: auto;
       height: 250px;
