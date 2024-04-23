@@ -12,8 +12,6 @@
   img {
     --size: 44px;
 
-    width: var(--size);
-    height: var(--size);
     background-color: var(--color-gray-light);
     border-radius: var(--border-radius-small);
   }

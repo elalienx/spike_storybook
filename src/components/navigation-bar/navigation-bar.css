@@ -16,5 +16,7 @@
 @media (min-width: 700px) {
   .navigation-bar {
     --scoutr-logo-size: 24px;
+
+    padding: 24px;
   }
 }
