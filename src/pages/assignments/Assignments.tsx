@@ -1,5 +1,6 @@
 // Project files
 import Card from "components/card/Card";
+import CardNew from "components/card-new/CardNew";
 import Loader from "components/loader/Loader";
 import Assignment from "types/Assignment";
 import Status from "types/Status";
@@ -8,7 +9,6 @@ import Hero from "./helpers/Hero";
 import StateEmpty from "./helpers/StateEmpty";
 import StateError from "./helpers/StateError";
 import "./assignments.css";
-import CardNew from "components/card-new/CardNew";
 
 interface Props {
   /** The assignments comming from the database. */

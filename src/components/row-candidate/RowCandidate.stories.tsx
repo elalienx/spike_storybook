@@ -59,7 +59,7 @@ export const Default: Story = {
 
 export const LongTexts: Story = {
   args: {
-    id: 1,
+    id: 2,
     candidate_name: "Eduardo Xavier Alvarez Nowak",
     candidate_job_title: "Tech Lead specializing in frontend",
     candidate_image_url: ImageURLs.candidate_eduardo,
@@ -79,7 +79,7 @@ export const LongTexts: Story = {
 
 export const Empty: Story = {
   args: {
-    id: 2,
+    id: 3,
     candidate_name: "Eduardo Alvarez Nowak",
     candidate_job_title: "",
     candidate_image_url: "",

@@ -42,6 +42,7 @@ td::before {
   }
 
   th {
+    font-weight: var(--font-weight-bold);
     padding: var(--space-small);
   }
 

@@ -25,7 +25,7 @@ export default function NavigationBar(item: Props) {
     <nav className="navigation-bar">
       {/* Left */}
       <Assignment
-        assignment_name={assignment_name}
+        assignment_name={assignment_name || "Assignment Page"}
         company_image_url={company_image_url}
       />
 

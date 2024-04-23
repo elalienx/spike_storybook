@@ -1,0 +1,24 @@
+#candidates {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 64px; /* big space between header and table*/
+  min-height: 100vh;
+
+  /** Like in Hono.dev the navbar is wider but does not take the whole screen */
+  .navigation-bar {
+    width: min(1600px, 100% - 24px - 24px); /* 24px per sidee */
+    margin-inline: auto;
+  }
+
+  .section {
+    width: min(1200px, 100% - 24px - 24px); /* 24px per sidee */
+    margin-inline: auto;
+  }
+
+  .section.loading,
+  .section.empty,
+  .section.error {
+    display: grid;
+    place-items: center;
+  }
+}

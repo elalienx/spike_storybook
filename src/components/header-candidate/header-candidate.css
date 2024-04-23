@@ -1,4 +1,6 @@
 .header-candidate {
+  text-align: center;
+
   .candidate-image {
     --size: 72px;
 
@@ -15,6 +17,5 @@
   .label {
     margin-top: var(--space-small);
     margin-left: -16px; /* to visually center the label with the bigger image */
-    text-align: center;
   }
 }

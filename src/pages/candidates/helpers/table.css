@@ -1,0 +1,6 @@
+.candidate-table {
+  /* Design */
+  th:first-child {
+    text-align: center;
+  }
+}
