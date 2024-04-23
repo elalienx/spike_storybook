@@ -7,7 +7,7 @@
   --color-green: #88ad3d;
   --color-gray: #a9a9a9;
   --color-yellow: #d0a63d;
-  --color-blue: #265889;
+  --color-blue: #2a639b;
   --color-purple: #6d358d;
   --color-cyan: #4ea9c1;
 
@@ -18,13 +18,12 @@
   --color-green-light: #f3f7ea;
   --color-gray-light: #f2f2f2;
   --color-yellow-light: #faf6eb;
-  --color-blue-light: #e4eef7;
+  --color-blue-light: #ebf2fa;
   --color-purple-light: #f1e8f6;
   --color-cyan-light: #edf6f8;
 
   /* ## Special colors */
-  --color-blue-dark: #1e466e; /* for button hover */
-  --color-border: var(--color-gray); /* for table border */
+  --color-blue-dark: #1a4065; /* for button hover */
 
   /* # Fonts */
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
