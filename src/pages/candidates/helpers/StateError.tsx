@@ -13,7 +13,12 @@ export default function StateError() {
       <div className="content">
         <p>The office WIFI strikes again!</p>
         <p>You know the drill. Call Martin and try again.</p>
-        <Button label="Try again" icon="rotate-right" primary={true} />
+        <Button
+          label="Try again"
+          icon="rotate-right"
+          size="big"
+          primary={true}
+        />
       </div>
     </div>
   );

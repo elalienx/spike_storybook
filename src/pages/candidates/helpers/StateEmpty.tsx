@@ -13,7 +13,13 @@ export default function StateEmpty() {
       <div className="content">
         <p>Welcome to a new Scoutr assignment.</p>
         <p>Click below to start adding candidates.</p>
-        <Button label="New assignment" icon="plus" primary={true} />
+        <Button
+          label="New assignment"
+          icon_prefix="fab"
+          icon="linkedin"
+          primary={true}
+          size="big"
+        />
       </div>
     </div>
   );

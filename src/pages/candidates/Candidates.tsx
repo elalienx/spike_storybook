@@ -6,6 +6,7 @@ import StateEmpty from "./helpers/StateEmpty";
 import StateError from "./helpers/StateError";
 import Table from "./helpers/Table";
 import "./candidates.css";
+import Button from "components/button/Button";
 
 interface Props {
   /** The candidates belonging to an assignment. */
@@ -20,6 +21,20 @@ export default function Candidates(item: Props) {
   // Local state
   const { data, status } = item;
 
+  // Components
+  const Content = (
+    <>
+      <Table candidates={data} />
+      <Button
+        label={"Add candidates"}
+        primary={true}
+        size="big"
+        icon_prefix="fab"
+        icon="linkedin"
+      />
+    </>
+  );
+
   return (
     <div id="candidates">
       <NavigationBar
@@ -31,7 +46,7 @@ export default function Candidates(item: Props) {
         {status === "loading" && <Loader />}
         {status === "empty" && <StateEmpty />}
         {status === "error" && <StateError />}
-        {status === "content" && <Table candidates={data} />}
+        {status === "content" && Content}
       </section>
     </div>
   );
