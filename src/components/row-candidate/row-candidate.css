@@ -13,23 +13,6 @@
 /* Laptop half screen */
 @media (min-width: 700px) {
   .row-candidate {
-    /* Debug */
-    .candidate .title {
-      background-color: pink;
-    }
-    .candidate .label {
-      background-color: lightgreen;
-    }
-    .company .title {
-      background-color: aliceblue;
-    }
-    .company .label {
-      background-color: lightyellow;
-    }
-    .notes {
-      background-color: lavender;
-    }
-
     /* Layout */
     .header-candidate {
       display: none;
@@ -55,6 +38,10 @@
 
     .company img {
       --size: 24px;
+    }
+
+    .notes .trim-text {
+      -webkit-line-clamp: 3; /** Overides the default 1 line trim */
     }
 
     /* Column widths */
