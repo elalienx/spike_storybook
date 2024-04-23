@@ -10,6 +10,7 @@
   }
 
   .text {
+    margin-right: -5px; /* to optically align the loading... word because of the elipsis (...) */
     color: var(--color-gray);
   }
 }

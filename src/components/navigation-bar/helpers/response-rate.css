@@ -1,34 +1,32 @@
-.navigation-bar {
-  .response-rate {
-    text-align: right;
-  }
+.navigation-bar .response-rate {
+  text-align: right;
 
-  .response-rate .symbol {
+  .symbol {
     vertical-align: super; /* to make text superscript (x^2) */
     font-size: 9.5px;
   }
 
-  .response-rate .value {
+  .value {
     font-weight: var(--font-weight-bold);
   }
 
-  .response-rate .label {
+  .label {
     font-size: 8px;
   }
 }
 
 /* Bigger than laptop half width */
 @media (min-width: 700px) {
-  .navigation-bar {
-    .response-rate .symbol {
+  .navigation-bar .response-rate {
+    .symbol {
       font-size: 18px;
     }
 
-    .response-rate .value {
+    .value {
       font-size: 32px;
     }
 
-    .response-rate .label {
+    .label {
       font-size: var(--font-size-small);
     }
   }

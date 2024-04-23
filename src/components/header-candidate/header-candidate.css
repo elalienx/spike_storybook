@@ -1,29 +1,20 @@
 .header-candidate {
-  text-align: center;
-}
+  .candidate-image {
+    --size: 72px;
 
-.header-candidate img {
-  object-fit: contain;
-}
+    border-radius: var(--border-radius-big);
+  }
 
-.header-candidate .candidate-image {
-  --size: 72px;
+  .company-image {
+    --size: 32px;
 
-  width: var(--size);
-  height: var(--size);
-  border-radius: var(--border-radius-big);
-}
+    margin-left: -16px; /* to move this image inside the other */
+    border-radius: var(--border-radius-small);
+  }
 
-.header-candidate .company-image {
-  --size: 32px;
-
-  width: var(--size);
-  height: var(--size);
-  margin-left: -16px; /* to move this image inside the other */
-  border-radius: var(--border-radius-small);
-}
-
-.header-candidate .label {
-  margin-top: var(--space-small);
-  margin-left: -16px; /* to visually center the label with the bigger image */
+  .label {
+    margin-top: var(--space-small);
+    margin-left: -16px; /* to visually center the label with the bigger image */
+    text-align: center;
+  }
 }
