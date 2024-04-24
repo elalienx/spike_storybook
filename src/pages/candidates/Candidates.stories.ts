@@ -63,7 +63,7 @@ export const Default: Story = {
         notes:
           "More than 8 years of HR recruitment experience in multiples industries like tech, restaurants, health sector, education, white collar, blue collar, executive search, and more. Great salary negotiation skills.",
         relevance: 5,
-        contact_status: 5,
+        contact_status: 0,
         contact_date: "2024-04-02 21:00:30.610279",
         projectId: 1,
         date_created: "2024-01-31 21:00:30.610279",

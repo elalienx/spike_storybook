@@ -7,6 +7,7 @@ import StateError from "./helpers/StateError";
 import Table from "./helpers/Table";
 import "./candidates.css";
 import Button from "components/button/Button";
+import Candidate from "types/Candidate";
 
 interface Props {
   /** The candidates belonging to an assignment. */
@@ -21,10 +22,17 @@ export default function Candidates(item: Props) {
   // Local state
   const { data, status } = item;
 
+  // Properties
+  const candidates: Candidate[] = data;
+  const contacted = candidates.filter((item) => item.contact_status > 0);
+  const response_rate: number = Math.round(
+    (contacted.length / candidates.length) * 100
+  );
+
   // Components
   const Content = (
     <>
-      <Table candidates={data} />
+      <Table candidates={candidates} />
       <Button
         label={"Add candidates"}
         primary={true}
@@ -38,9 +46,9 @@ export default function Candidates(item: Props) {
   return (
     <div id="candidates">
       <NavigationBar
-        assignment_name={""}
+        assignment_name={"Assignment Page"}
         company_image_url={""}
-        response_rate={0}
+        response_rate={response_rate}
       />
       <section className={`section ${status}`}>
         {status === "loading" && <Loader />}
