@@ -23,7 +23,8 @@
   --color-cyan-light: #ecf6f8;
 
   /* ## Special colors */
-  --color-blue-dark: #1a4065; /* for button hover */
+  --color-blue-medium: #789dc1; /* for button:active */
+  --color-blue-dark: #1a4065; /* for button:hover */
 
   /* # Fonts */
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

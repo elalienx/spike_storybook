@@ -17,7 +17,7 @@
   }
 
   &:active {
-    color: var(--color-blue-light);
+    color: #789dc1;
   }
 
   &:disabled {
