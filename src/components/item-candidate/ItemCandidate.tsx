@@ -22,7 +22,9 @@ export default function ItemCandidate(item: Props) {
       <ImageThumbnail src={candidate_image_url} profile="candidate" />
       <div className="content">
         <span className="title trim-text">{candidate_name}</span>
-        <small className="label trim-text">{candidate_job_title}</small>
+        <small className="label trim-text" title={candidate_job_title}>
+          {candidate_job_title}
+        </small>
       </div>
     </div>
   );

@@ -31,7 +31,8 @@ export const JobTitleTrimmed: Story = {
   args: {
     candidate_image_url: ImageURLs.candidate_eduardo,
     candidate_name: "Eduardo Alvarez",
-    candidate_job_title: "Senior Frontend Developer",
+    candidate_job_title:
+      "Senior Frontend Developer with a touch of Graphic Design, UI, and UX",
   },
 };
 
