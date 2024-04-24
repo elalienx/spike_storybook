@@ -20,7 +20,7 @@ export default function Table(item: Props) {
   const Rows = candidates.map((item) => <RowCandidate {...item} />);
 
   return (
-    <table className="candidate-table">
+    <table className="table">
       <thead>
         <tr>{Headers}</tr>
       </thead>
