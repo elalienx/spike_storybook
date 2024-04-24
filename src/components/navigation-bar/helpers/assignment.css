@@ -4,7 +4,10 @@
 
   .title {
     font-size: var(--font-size-normal);
-    max-width: 86px;
+  }
+
+  .title.trim-text {
+    -webkit-line-clamp: 2; /** 2 lines on mobile */
   }
 
   .logo {
@@ -14,7 +17,7 @@
   }
 }
 
-/* Bigger than laptop half width */
+/* Tablet */
 @media (min-width: 700px) {
   .navigation-bar .assignment {
     .title {
@@ -24,6 +27,15 @@
 
     .logo {
       --size: 48px;
+    }
+  }
+}
+
+/* Laptop */
+@media (min-width: 1000px) {
+  .navigation-bar .assignment {
+    .title.trim-text {
+      -webkit-line-clamp: 1; /** 1 line on desktop */
     }
   }
 }

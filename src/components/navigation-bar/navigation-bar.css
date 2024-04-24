@@ -6,10 +6,7 @@
   gap: var(--space-medium);
   align-items: center;
   padding: var(--space-small) 24px;
-
-  .trim-text {
-    -webkit-line-clamp: 2; /** 2 lines on mobile */
-  }
+  background-color: white;
 
   .scoutr-logo {
     height: var(--scoutr-logo-size);
@@ -22,9 +19,5 @@
     --scoutr-logo-size: 24px;
 
     padding: 24px;
-
-    .trim-text {
-      -webkit-line-clamp: 1; /** 1 line on desktop */
-    }
   }
 }

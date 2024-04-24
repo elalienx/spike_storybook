@@ -6,7 +6,7 @@
 
   /** Like in Hono.dev the navbar is wider but does not take the whole screen */
   .navigation-bar {
-    width: min(1600px, 100% - 24px - 24px); /* 24px per sidee */
+    width: min(1600px, 100%);
     margin-inline: auto;
   }
 
