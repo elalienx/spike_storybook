@@ -15,7 +15,7 @@ export default function RowCandidate(item: Candidate) {
   return (
     <tr className="row-candidate">
       <HeaderCandidate {...header} />
-      <td className="id column-small" data-label="Profile">
+      <td className="id column-small" data-label="Id">
         {item.id}
       </td>
       <td className="candidate column-big" data-label="Candidate">

@@ -21,7 +21,7 @@ export default function ItemCompany(item: Props) {
   // Properties
   const monthsInAYear = 12;
   const durationInyears = monthsToYears(company_duration_in_months);
-  const durationCSS = company_duration_in_months < monthsInAYear ? "red" : "";
+  const durationCSS = company_duration_in_months < monthsInAYear && "red";
 
   return (
     <div className="item-company">
