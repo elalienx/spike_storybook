@@ -1,11 +1,11 @@
 // Project files
 import Image from "assets/state-empty-assignments.png";
 import Button from "components/button/Button";
-import "./state-assignments.css";
+import "./state.css";
 
 export default function StateEmpty() {
   return (
-    <div className="state-assignments">
+    <div className="state">
       <img
         src={Image}
         alt="A male a female construction engineers checking a blueprint"
