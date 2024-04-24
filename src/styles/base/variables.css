@@ -12,15 +12,15 @@
   --color-cyan: #4ea9c1;
 
   /* ## Lighter shades */
-  --color-red-light: #faeeee;
-  --color-orange-light: #fcf2ea;
-  --color-black-light: #e6e9eb;
-  --color-green-light: #f3f7ea;
+  --color-red-light: #f9ebec;
+  --color-orange-light: #f9ebec;
+  --color-black-light: #f1f2f4;
+  --color-green-light: #f4f8ec;
   --color-gray-light: #f2f2f2;
-  --color-yellow-light: #faf6eb;
+  --color-yellow-light: #faf6ea;
   --color-blue-light: #ebf2fa;
-  --color-purple-light: #f1e8f6;
-  --color-cyan-light: #edf6f8;
+  --color-purple-light: #f4edf8;
+  --color-cyan-light: #ecf6f8;
 
   /* ## Special colors */
   --color-blue-dark: #1a4065; /* for button hover */
