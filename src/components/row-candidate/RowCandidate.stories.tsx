@@ -12,7 +12,7 @@ import RowCandidate from "./RowCandidate";
 const meta: Meta<typeof RowCandidate> = {
   title: "Tables/Row Candidate",
   component: RowCandidate,
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "centered" },
   argTypes: {
     id: { control: { type: "number", min: 1 } },
     projectId: { control: { disable: true } },
