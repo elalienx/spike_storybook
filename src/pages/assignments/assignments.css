@@ -19,6 +19,15 @@
   }
 }
 
+/* Phablet */
+@media (min-width: 550px) {
+  #assignments {
+    .section.content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 /* Tablet */
 @media (min-width: 700px) {
   #assignments {
